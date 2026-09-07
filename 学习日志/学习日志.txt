@@ -1,1 +1,14 @@
-第一天：
+第一天：完成了C语言的复习，并完成了C语言相关任务，创建了对应的git仓库，并且每一次完成都进行了备份操作
+然后影响比较深的是这个问题三的地址查看,可以通过这个这个差距为2字节，看出这个数组低序号存储在低坐标下，然后存在公式 初始地址+序列*字节  
+可以看出存储上差了两个字节，可以反向验证这个数组中单个元素存储占用为1字节,为uint8_t或者char而非int类型,这个占用两个字节
+然后显示设置存储，可以避免设备对运行结果干扰
+
+第三次作业输出
+address of the start of the array: 0x7fff3dd96684
+address of index 2: 0x7fff3dd96686
+value at index 2: 10
+
+第四次作业输出
+address of the start of the array: 0x7ffd5ab102b0
+address of index 2: 0x7ffd5ab102b4
+value at index 2: 10
