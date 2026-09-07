@@ -1,8 +1,10 @@
 第一天：完成了C语言的复习，并完成了C语言相关任务，创建了对应的git仓库，并且每一次完成都进行了备份操作
-然后影响比较深的是这个问题三的地址查看,可以通过这个这个差距为2字节，看出这个数组低序号存储在低坐标下，然后存在公式 初始地址+序列*字节  
+然后影响比较深的是这个问题三,四的地址查看,可以通过这个这个差距为2字节，看出这个数组低序号存储在低坐标下，然后存在公式 初始地址+序列*字节  
 可以看出存储上差了两个字节，可以反向验证这个数组中单个元素存储占用为1字节,为uint8_t或者char而非int类型,这个占用两个字节
 然后显示设置存储，可以避免设备对运行结果干扰
 
+2:在第六次作业输出时，结构体内存大小并非简单的想加
+int 存储占用4个字节,char*存储占用8个字节,但由于内存对齐，所以最终占用为16个字节
 第三次作业输出
 address of the start of the array: 0x7fff3dd96684
 address of index 2: 0x7fff3dd96686
@@ -12,3 +14,15 @@ value at index 2: 10
 address of the start of the array: 0x7ffd5ab102b0
 address of index 2: 0x7ffd5ab102b4
 value at index 2: 10
+
+第五次作业输出
+prints hello: hello
+length of hello: 5
+prints world: world
+address of world_str: 0x7ffe29927816
+address of 'r': 0x7ffe29927818
+prints hello world: hello world
+
+第六次作业输出
+Size of a struct Student: 16 bytes
+Student's ID: 5

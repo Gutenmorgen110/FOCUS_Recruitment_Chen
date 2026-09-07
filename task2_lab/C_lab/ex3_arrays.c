@@ -16,7 +16,7 @@ int main() {
   printf("address of index 2: %p\n", ptr_to_idx_2);
 
   // TODO: store the value 10 at index 2, using ptr_to_idx_2
-  some_array[2] = 10;
+  *ptr_to_idx_2 = 10;
 
   // TODO: print the value at index 2
   // Hint: this blank should be the same as the previous blank
