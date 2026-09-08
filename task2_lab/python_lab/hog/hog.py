@@ -47,11 +47,14 @@ def boar_brawl(player_score, opponent_score):
     """
     # BEGIN PROBLEM 2
     "*** YOUR CODE HERE ***"
-    result = opponent_score//10%10 - player_score%10
-    if result <= 0:
+    # Boar Brawl = 3 × |对手十位 − 自己个位|，保底 1
+    diff = (opponent_score // 10) % 10 - player_score % 10
+    if diff < 0:
+        diff = -diff
+    gain = 3 * diff
+    if gain < 1:
         return 1
-    else:
-        return result
+    return gain
     # END PROBLEM 2
 
 
@@ -71,9 +74,9 @@ def take_turn(num_rolls, player_score, opponent_score, dice=six_sided):
     # BEGIN PROBLEM 3
     "*** YOUR CODE HERE ***"
     if num_rolls == 0:
-        return boar_brawl(player_score,opponent_score)
+        return boar_brawl(player_score, opponent_score)
     else:
-        return roll_dice(num_rolls,dice=six_sided)
+        return roll_dice(num_rolls, dice)
     # END PROBLEM 3
 
 
@@ -113,13 +116,13 @@ def sus_points(score):
     """Return the new score of a player taking into account the Sus Fuss rule."""
     # BEGIN PROBLEM 4
     "*** YOUR CODE HERE ***"
-    if num_factors(score)==3 & num_factors(score)==4:
-        for i in range(1,10):
-            if is_prime(score+i):
-                return (score+i)
-    else:
-        return score
-
+    # Sus Fuss：总分恰有 3 或 4 个因数 → 升到下一个质数
+    if num_factors(score) == 3 or num_factors(score) == 4:
+        k = score + 1
+        while not is_prime(k):
+            k += 1
+        return k
+    return score
     # END PROBLEM 4
 
 
@@ -129,7 +132,7 @@ def sus_update(num_rolls, player_score, opponent_score, dice=six_sided):
     """
     # BEGIN PROBLEM 4
     "*** YOUR CODE HERE ***"
-    score_sim = simple_update(num_rolls, player_score, opponent_score, dice=six_sided)
+    score_sim = simple_update(num_rolls, player_score, opponent_score, dice)
     score_sus = sus_points(score_sim)
     return score_sus
     # END PROBLEM 4
@@ -170,7 +173,14 @@ def play(strategy0, strategy1, update, score0=0, score1=0, dice=six_sided, goal=
     who = 0  # Who is about to take a turn, 0 (first) or 1 (second)
     # BEGIN PROBLEM 5
     "*** YOUR CODE HERE ***"
-
+    while score0 < goal and score1 < goal:
+        if who == 0:
+            num_rolls = strategy0(score0, score1)
+            score0 = update(num_rolls, score0, score1, dice)
+        else:
+            num_rolls = strategy1(score1, score0)
+            score1 = update(num_rolls, score1, score0, dice)
+        who = 1 - who
     # END PROBLEM 5
     return score0, score1
 
@@ -197,7 +207,9 @@ def always_roll(n):
 
     # BEGIN PROBLEM 6
     "*** YOUR CODE HERE ***"
-    return n
+    def roll(*args):
+        return n
+    return roll
     # END PROBLEM 6
 
 
@@ -257,7 +269,12 @@ def make_averaged(original_function, times_called=1000):
 
     # BEGIN PROBLEM 8
     "*** YOUR CODE HERE ***"
-    
+    def averaged(*args):
+        results = 0
+        for i in range(times_called):
+            results+=original_function(*args)
+        return (results/times_called)
+    return averaged
     # END PROBLEM 8
 
 
@@ -271,6 +288,16 @@ def max_scoring_num_rolls(dice=six_sided, times_called=1000):
     """
     # BEGIN PROBLEM 9
     "*** YOUR CODE HERE ***"
+    max_roll = 1
+    result_avg = make_averaged(roll_dice,times_called=times_called)
+    max = result_avg(1,dice)
+    for i in range(2,11):
+        tmp = result_avg(i,dice)
+        if tmp>max:
+            max_roll = i 
+            max = tmp
+    return max_roll
+
     # END PROBLEM 9
 
 
@@ -316,6 +343,9 @@ def boar_strategy(score, opponent_score, threshold=11, num_rolls=6):
     points, and returns NUM_ROLLS otherwise. Ignore the Sus Fuss rule.
     """
     # BEGIN PROBLEM 10
+    score_boar = boar_brawl(score,opponent_score)
+    if score_boar >= threshold:
+        return 0 
     return num_rolls  # Remove this line once implemented.
     # END PROBLEM 10
 
@@ -325,17 +355,24 @@ def sus_strategy(score, opponent_score, threshold=11, num_rolls=6):
     THRESHOLD points, and returns NUM_ROLLS otherwise. Consider both the Boar Brawl and
     Suss Fuss rules."""
     # BEGIN PROBLEM 11
-    return num_rolls  # Remove this line once implemented.
+    # 掷0骰的净收益（先得 Boar 分、再被 Sus 修正），确定且无需真掷骰
+    gain0 = sus_update(0, score, opponent_score) - score
+    if gain0 >= threshold:
+        return 0
+    return num_rolls
     # END PROBLEM 11
 
 
 def final_strategy(score, opponent_score):
-    """Write a brief description of your final strategy.
-
-    *** YOUR DESCRIPTION HERE ***
+    """策略：若掷 0 骰（Boar Brawl + Sus Fuss 修正）的净收益 ≥ 10 分就空手，
+    或空手能直接冲到 GOAL 也空手；其余情况掷 6 骰
+    （经验上六面骰单回合期望最高的骰数）。全程确定性、无随机。
     """
     # BEGIN PROBLEM 12
-    return 6  # Remove this line once implemented.
+    gain0 = sus_update(0, score, opponent_score) - score  # 掷0骰净收益（含 Sus）
+    if score + gain0 >= GOAL or gain0 >= 10:
+        return 0
+    return 6
     # END PROBLEM 12
 
 

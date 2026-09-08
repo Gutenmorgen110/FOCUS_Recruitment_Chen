@@ -5,24 +5,39 @@
 
 2:在第六次作业输出时，结构体内存大小并非简单的想加
 int 存储占用4个字节,char*存储占用8个字节,但由于内存对齐，所以最终占用为16个字节
-第三次作业输出
-address of the start of the array: 0x7fff3dd96684
-address of index 2: 0x7fff3dd96686
-value at index 2: 10
 
-第四次作业输出
-address of the start of the array: 0x7ffd5ab102b0
-address of index 2: 0x7ffd5ab102b4
-value at index 2: 10
+3:在完成Python部分中，在这个补充矩阵并且进行相乘处遇到了问题，查阅官方文档，了解vstack的适用方式后，优先进行组装，后直接输出B_padded矩阵，后再进行乘积，想要说明第一步组装没有出问题。
 
-第五次作业输出
-prints hello: hello
-length of hello: 5
-prints world: world
-address of world_str: 0x7ffe29927816
-address of 'r': 0x7ffe29927818
-prints hello world: hello world
+4：解决hog问题
+问题一中，一开始测试时，未注意到传入的是函数地址，而非函数调用
+def roll_dice(num_rolls, dice=six_sided):
 
-第六次作业输出
-Size of a struct Student: 16 bytes
-Student's ID: 5
+被这个函数定义误解
+def make_fair_dice(sides):
+    """Return a die that returns 1 to SIDES with equal chance."""
+    assert type(sides) == int and sides >= 1, 'Illegal value for sides'
+    def dice():
+        return randint(1,sides)
+    return dice
+four_sided = make_fair_dice(4)
+six_sided = make_fair_dice(6)
+后来经过查证解决
+
+5：完成第一个任务后，再查看test01的注释信息时，发现一段说明
+          >>> # Make sure you call dice exactly num_rolls times!
+          >>> # If you call it fewer or more than that, it won't be at the right spot in the cycle for the next roll
+          >>> # Note that a return statement within a loop ends the loop
+发现自己设计有一定瑕疵，这个要求是一定要把循环走完，而非识别到一就终止循环，所以对代码进行修改，引入信号量flag进行标记
+
+6：在处理hog问题中，最后一个策略中，参数如何选择的问题，考虑使用前面的average函数进行选取，通过微调参数，配合
+python3 -c "from hog import *; print(average_win_rate(final_strategy))"
+这个命令，比较不同测试的胜率，从而尽可能得出最优参数
+
+7：整个hog问题坐下来，首先在查阅英文含义，比赛规则上比较棘手，中国没有这样的游戏规则
+收获最大的是整个项目的架构学习，分别
+1：完成了基础游戏规则的实现，
+2：不同策略方式的优化，
+3：以及通过批量测试求平均的方式进行不同方案优劣的比较，
+可以说是一个比较完整的项目了，并且其中根据示例分析，使用了不少函数嵌套结构，从而实现了函数复用，这个在我之前的学习中不常使用，借助这个机会训练了一下。
+
+
