@@ -1,3 +1,14 @@
 *.pdf
+!Summary_Report*.pdf
+!**/Summary_Report*.pdf
+!**/Report.pdf
 
-
+# 构建产物与虚拟环境
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+install/
+log/
+.codewhale/
