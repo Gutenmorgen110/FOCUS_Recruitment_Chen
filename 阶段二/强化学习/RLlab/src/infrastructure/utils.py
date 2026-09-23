@@ -10,7 +10,6 @@ from typing import Dict, Tuple, List
 ############################################
 ############################################
 
-
 def sample_trajectory(
     env: gym.Env, policy: MLPPolicy, max_length: int, render: bool = False
 ) -> Dict[str, np.ndarray]:
@@ -22,22 +21,22 @@ def sample_trajectory(
         # render an image
         if render:
             if hasattr(env, "sim"):
-                img = env.sim.render(camera_name="track", height=500, width=500)[::-1]
+                img = env.sim.render(camera_name="track", height=500, width=500)[::-1]# type: ignore
             else:
                 img = env.render(mode="single_rgb_array")
             image_obs.append(
-                cv2.resize(img, dsize=(250, 250), interpolation=cv2.INTER_CUBIC)
+                cv2.resize(img, dsize=(250, 250), interpolation=cv2.INTER_CUBIC)# type: ignore
             )
 
         # TODO use the most recent ob to decide what to do
-        ac = None
+        ac = policy.get_action(ob)
 
         # TODO: take that action and get reward and next ob
-        next_ob, rew, done, info = None, None, None, None
+        next_ob, rew, done, info = env.step(ac)
 
         # TODO rollout can end due to done, or due to max_length
         steps += 1
-        rollout_done = None
+        rollout_done = done or (steps >= max_length)
 
         # record result of taking that action
         obs.append(ob)
@@ -60,6 +59,7 @@ def sample_trajectory(
         "next_observation": np.array(next_obs, dtype=np.float32),
         "terminal": np.array(terminals, dtype=np.float32),
     }
+
 
 
 def sample_trajectories(

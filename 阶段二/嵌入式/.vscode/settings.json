@@ -1,3 +1,12 @@
 {
-    "cmake.sourceDirectory": "/home/chen/code/FOCUS/阶段二/嵌入式/hello_world"
+    "cmake.sourceDirectory": "/home/chen/code/FOCUS/阶段二/嵌入式/hello_world",
+    "ROS2.distro": "humble",
+    "python.autoComplete.extraPaths": [
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
 }
