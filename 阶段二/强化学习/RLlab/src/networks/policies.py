@@ -60,11 +60,14 @@ class MLPPolicy(nn.Module):
     def get_action(self, obs: np.ndarray) -> np.ndarray:
         """Takes a single observation (as a numpy array) and returns a single action (as a numpy array)."""
         # TODO: implement get_action
-        action = None
-
+        obs_tensor = ptu.from_numpy(obs)## type: ignore
+        dist = self.forward(obs_tensor)
+        action_ten = dist.sample()
+        action = ptu.to_numpy(action_ten)
         return action
 
     def forward(self, obs: torch.FloatTensor):
+
         """
         This function defines the forward pass of the network.  You can return anything you want, but you should be
         able to differentiate through it. For example, you can return a torch.FloatTensor. You can also return more
@@ -72,10 +75,16 @@ class MLPPolicy(nn.Module):
         """
         if self.discrete:
             # TODO: define the forward pass for a policy with a discrete action space.
-            pass
+            logits = self.logits_net(obs)
+            dist = D.Categorical(logits=logits)
+            return dist
         else:
             # TODO: define the forward pass for a policy with a continuous action space.
-            pass
+            std = self.logstd.exp()
+            mean = self.mean_net(obs)
+            dist = D.Normal(mean,std)#type ignore
+            return dist
+           
 
     def update(self, obs: np.ndarray, actions: np.ndarray, *args, **kwargs) -> dict:
         """
@@ -100,10 +109,16 @@ class MLPPolicyPG(MLPPolicy):
         advantages = ptu.from_numpy(advantages)
 
         # TODO: compute the policy gradient actor loss
-        loss = None
+        dist = self.forward(obs=obs)
+        log_probs = dist.log_prob(actions)
+        if not self.discrete:
+            log_probs = log_probs.sum(dim=-1)  # 对动作维度求和 → (B,)
+        loss = -(log_probs*advantages).mean()
 
         # TODO: perform an optimizer step
-        pass
+        self.optimizer.zero_grad()
+        loss.backward()
+        self.optimizer.step()
 
         return {
             "Actor Loss": loss.item(),
