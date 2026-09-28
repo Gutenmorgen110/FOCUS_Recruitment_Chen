@@ -71,18 +71,65 @@ logits_net = nn.Sequential(
 #         p = F.softmax(logits, dim=-1).detach()
 #         print(f"step {step:2d}  π(a=0)={p[0,0]:.3f}  π(a=1)={p[0,1]:.3f}  loss={loss.item():.3f}")
     
-mean_net = nn.Sequential(
-    nn.Linear(4, 32), nn.Tanh(),
-    nn.Linear(32, 2)
-)
-logstd = nn.Parameter(torch.zeros(2))   # 独立参数，不依赖 obs
+# mean_net = nn.Sequential(
+#     nn.Linear(4, 32), nn.Tanh(),
+#     nn.Linear(32, 2)
+# )
+# logstd = nn.Parameter(torch.zeros(2))   # 独立参数，不依赖 obs
 
-obs = torch.tensor([[0.03, -0.01, 0.04, 0.02]])
-mean = mean_net(obs)
-std = torch.exp(logstd)
+# obs = torch.tensor([[0.03, -0.01, 0.04, 0.02]])
+# mean = mean_net(obs)
+# std = torch.exp(logstd)
 
-print("mean =", mean)
-print("std  =", std)
+# # print("连续 mean.shape =", mean.shape)        # [3, 2]
+# # print("连续 std.shape  =", std.shape)         # [2] —— 注意！不依赖 batch
+# # print("mean =", mean)
+# # print("std  =", std)
+# # print("logst =",logstd)
 
-dist = D.Normal(mean, std)
-print("采样 3 次：", [dist.sample().numpy() for _ in range(3)])
+# # dist = D.Normal(mean, std)
+# # print("采样 3 次：", [dist.sample().numpy() for _ in range(3)])
+# dist_c = D.Normal(mean, std)
+# # samples_c = [dist_c.sample() for _ in range(5)]
+# # for s in samples_c:
+# #     print("连续采样：", s.numpy())   # 每维是实数，如 [0.12, -0.87]
+
+# act_c = torch.randn(3, 2)                  # 每个样本一个 2 维动作
+# lp_c = dist_c.log_prob(act_c)
+# print("连续 log_prob.shape =", lp_c.shape)  # [3, 2] —— 注意！
+# print("act_c",act_c)
+# print(lp_c)
+
+
+
+import torch, torch.nn as nn, torch.distributions as D
+
+torch.manual_seed(0)
+mean_net = nn.Sequential(nn.Linear(1, 32), nn.Tanh(), nn.Linear(32, 1))
+logstd = nn.Parameter(torch.zeros(1))
+opt = torch.optim.Adam(list(mean_net.parameters()) + [logstd], lr=5e-3)
+# print(list(mean_net.parameters()))
+# print([logstd])
+
+obs = torch.zeros(1, 1)
+target = 2.0
+B = 64   # 关键 1：批量采样
+
+for step in range(500):
+    mean = mean_net(obs).expand(B, 1)          # [B,1]广播机制，将结果广播到这个B*1的矩阵中
+    std  = torch.exp(logstd).expand(B, 1)      # [B,1]
+    dist = D.Normal(mean, std)
+    a = dist.sample()                          # [B,1]
+
+    reward = -(a - target).abs().sum(dim=-1)   # [B]
+    adv = reward - reward.mean()               # 关键 2：减 baseline
+
+    log_prob = dist.log_prob(a).sum(dim=-1)    # [B]
+    loss = -(log_prob * adv).mean()
+
+    opt.zero_grad(); loss.backward(); opt.step()
+
+    if step % 50 == 0:
+        m = mean_net(obs).item()
+        s = torch.exp(logstd).item()
+        print(f"step {step:3d}  mean={m:+.3f}  std={s:.3f}")

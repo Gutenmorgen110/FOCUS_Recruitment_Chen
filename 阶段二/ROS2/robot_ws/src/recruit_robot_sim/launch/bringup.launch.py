@@ -30,7 +30,7 @@ def generate_launch_description():
     )
     gazebo_server = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(os.path.join(gazebo_share, 'launch', 'gzserver.launch.py')),
-        launch_arguments={'world': os.path.join(pkg_share, 'worlds', 'my_worlds.world')}.items(),
+        launch_arguments={'world': os.path.join(pkg_share, 'worlds', 'room', 'World')}.items(),
     )
     gazebo_client = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(os.path.join(gazebo_share, 'launch', 'gzclient.launch.py')),
