@@ -1,12 +1,14 @@
 """基于激光雷达的自主探索节点。
 
-订阅 /scan，定时调用 Decision.step()，把结果发到 /cmd_vel。
+订阅 /scan（避障/转向）与 /odom（卡死检测），定时调用 Decision.step()，
+把结果发到 /cmd_vel。
 """
 
 import time
 
 import rclpy
 from geometry_msgs.msg import Twist
+from nav_msgs.msg import Odometry
 from rclpy.node import Node
 from rclpy.qos import qos_profile_sensor_data
 from sensor_msgs.msg import LaserScan
@@ -31,6 +33,10 @@ class ExplorationNode(Node):
         self.sub_scan = self.create_subscription(
             LaserScan, '/scan', self.on_scan, qos_profile_sensor_data)
 
+        # 订阅 /odom —— 卡死检测用（车卡住时雷达数据不变）
+        self.sub_odom = self.create_subscription(
+            Odometry, '/odom', self.on_odom, 10)
+
         # 控制定时器
         self.timer = self.create_timer(1.0 / CONTROL_HZ, self.on_tick)
 
@@ -39,6 +45,11 @@ class ExplorationNode(Node):
     def on_scan(self, msg: LaserScan):
         """只更新数据，不做决策。"""
         self.decision.update_scan(msg)
+
+    def on_odom(self, msg: Odometry):
+        """只更新位姿，供卡死检测用。"""
+        p = msg.pose.pose.position
+        self.decision.update_pose((p.x, p.y))
 
     def on_tick(self):
         """定时决策 + 发布。"""
