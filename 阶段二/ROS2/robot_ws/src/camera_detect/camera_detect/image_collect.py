@@ -16,14 +16,16 @@ from cv_bridge import CvBridge
 from rclpy.node import Node
 from sensor_msgs.msg import Image
 
+DATA_DIR = 'data'
 SAVE_DIR = 'camera_frames'
-CSV_FILE = 'clicks.csv'
+CSV_FILE = os.path.join(DATA_DIR, 'clicks.csv')
 
 class ImageSpy(Node):
 
     def __init__(self):
         super().__init__('image_spy')
 
+        os.makedirs(DATA_DIR, exist_ok=True)
         os.makedirs(SAVE_DIR, exist_ok=True)
 
         self.bridge = CvBridge()

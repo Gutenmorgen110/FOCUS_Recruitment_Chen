@@ -36,8 +36,9 @@ from sensor_msgs.msg import LaserScan
 # 复用决策逻辑
 from exploration.decision import Decision
 
-SUMMARY_FILE = 'cell_monitor.csv'
-DETAIL_FILE = 'cell_detail.csv'
+DATA_DIR = 'data'
+SUMMARY_FILE = os.path.join(DATA_DIR, 'cell_monitor.csv')
+DETAIL_FILE = os.path.join(DATA_DIR, 'cell_detail.csv')
 
 
 class CellMonitor(Node):
@@ -71,6 +72,7 @@ class CellMonitor(Node):
 
     # ---------- 文件 ----------
     def _init_csv(self):
+        os.makedirs(DATA_DIR, exist_ok=True)
         new_summary = not os.path.exists(SUMMARY_FILE)
         self.fp_summary = open(SUMMARY_FILE, 'a', newline='')
         self.writer_summary = csv.writer(self.fp_summary)

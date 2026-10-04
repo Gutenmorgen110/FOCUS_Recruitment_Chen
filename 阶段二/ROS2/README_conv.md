@@ -7,7 +7,7 @@
 
 html 版在 `html/` 目录下。**不要直接双击 `index.html`**——浏览器对 `file://`
 页面加载本地视频有安全限制，图片能正常显示、但视频会被拦掉，所以要借一个小型
-本地服务打开。这个服务只用 Python 标准库，不需要额外装任何包。
+本地服务打开。
 
 ### Windows
 
@@ -15,34 +15,17 @@ html 版在 `html/` 目录下。**不要直接双击 `index.html`**——浏览�
 2. 浏览器会自动弹出，图片和视频都能正常播放，视频可以拖动进度条
 3. 看完关掉那个黑色命令行窗口即可
 
-**如果提示「没有找到 Python」**：到 <https://www.python.org/downloads/> 下载安装，
-安装时**务必勾选 `Add Python to PATH`**，装完再双击一次本文件。
-
 ### Linux
-
-1. 双击 `html/双击我打开网页.sh`
-2. 如果双击没反应：右键 → 属性 → 权限 → 勾选「允许作为程序执行」，再双击；
+1. 如果双击没反应：右键 → 属性 → 权限 → 勾选「允许作为程序执行」，再双击；
    或者在该目录打开终端，执行 `bash 双击我打开网页.sh`
-3. 看完在终端里按 `Ctrl-C` 停止服务
+2. 看完在终端里按 `Ctrl-C` 停止服务
 
-### 手动启动（两个系统通用）
+### 手动启动
 
 ```bash
 cd html
 python3 serve.py        # Windows 上是 python serve.py
 ```
-
-脚本会自动挑一个空闲端口并打开浏览器，终端里会打印实际地址。
-如果浏览器没自动弹出，手动访问终端里给出的 `http://127.0.0.1:<端口>/index.html`。
-
-### 常见问题
-
-| 现象 | 原因 |
-| --- | --- |
-| 双击 `.bat` 一闪而过 | 没装 Python，或装的时候没勾 `Add Python to PATH` |
-| `.sh` 双击后要求选择操作 | 文件管理器没给执行权限，见上面 Linux 第 2 步 |
-| 图片正常但视频是黑框 | 直接用浏览器打开了 `index.html`，没走这个脚本 |
-| 端口被占用 | 脚本会自动往后找端口，看终端打印的地址即可 |
 
 # 2 TASK 1--项目环境说明
 项目采用 Ubuntu 22.04 配合 gazebo classic 进行开发
@@ -94,7 +77,8 @@ ros 2 interface show 接口 查看接口信息(方便后续通过话题通信进
 # 4 TASK 3 手动控制建图
 ## 4.1 建图过程记录
 <video src="attachments/录屏 2026年09月27日 20时18分36秒.webm" controls width="640"></video>
-## 4.2 第一次建图结果![](attachments/学习日志-1790512145508.webp)
+## 4.2 第一次建图结果
+![](attachments/学习日志-1790512145508.webp)
 ### 4.2.1 问题分析与参数调优
 1. 首先再次重复测试，进行问题复现，并且观察问题发生前后的现象
 2. 发现在第一个大房间探索时，在探索到第三个房间时，地图发生抖动，然后地图扭曲，出现如图所示结果，前两个房间地图探索均正常
@@ -198,7 +182,7 @@ loop_match_minimum_response_coarse: 0.35 → 0.50、fine: 0.45 → 0.60
 
 ![](attachments/学习日志-1790689255299.webp) 用键盘移动机器人，配合一个 Python 脚本采集各种情况的数据，方便反推参数阈值。
 采集脚本`src/exploration/exploration/params_spy.py` 
-采集到的数据`cell_detail.csv` 
+采集到的数据`data/cell_detail.csv` 
 ****
 修正前：
 ![](attachments/学习日志-1790690473955.webp)
@@ -320,7 +304,7 @@ loop_match_minimum_response_coarse: 0.35 → 0.50、fine: 0.45 → 0.60
 ## 7.2 设计思路
 首先让 AI 完成一个颜色采集 Python 脚本的设计 `src/camera_detect/camera_detect/image_collect.py `
 然后采集的数据放在
-`src/camera_detect/clicks.csv`
+`data/clicks.csv`
 从而为后续参数设计提供思路
 
 ### 7.2.1 决策函数设计思路

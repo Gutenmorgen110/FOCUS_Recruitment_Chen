@@ -1,13 +1,13 @@
 包内文件名	原始文件名
-img_001.webp	attachments/学习日志-1790512145508.webp
-img_002.webp	attachments/学习日志-1789904800311.webp
+img_001.webp	attachments/学习日志-1789904800311.webp
 vid_001.webm	attachments/第一天bringup_启动视频.webm
-img_003.webp	attachments/学习日志-1790507907768.webp
-img_004.webp	attachments/学习日志-1790510992239.webp
-img_005.webp	attachments/学习日志-1790511117304.webp
-img_006.webp	attachments/README-1791104296250.webp
-img_007.webp	attachments/学习日志-1790510097541.webp
+img_002.webp	attachments/学习日志-1790507907768.webp
+img_003.webp	attachments/学习日志-1790510992239.webp
+img_004.webp	attachments/学习日志-1790511117304.webp
+img_005.webp	attachments/README-1791104296250.webp
+img_006.webp	attachments/学习日志-1790510097541.webp
 vid_002.webm	attachments/录屏 2026年09月27日 20时18分36秒.webm
+img_007.webp	attachments/学习日志-1790512145508.webp
 img_008.webp	attachments/学习日志-1790514094633.webp
 img_009.webp	attachments/学习日志-1790576984938.webp
 img_010.webp	attachments/README-1791105786925.webp

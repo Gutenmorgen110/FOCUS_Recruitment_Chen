@@ -23,7 +23,8 @@ from rclpy.node import Node
 from rclpy.qos import qos_profile_sensor_data
 from sensor_msgs.msg import LaserScan
 
-OUT_FILE = 'scan_records——避障逻辑修改后.csv'
+DATA_DIR = 'data'
+OUT_FILE = os.path.join(DATA_DIR, 'scan_records——避障逻辑修改后.csv')
 
 
 class ScanMonitor(Node):
@@ -64,6 +65,7 @@ class ScanMonitor(Node):
 
     # ---------- 文件 ----------
     def _init_csv(self):
+        os.makedirs(DATA_DIR, exist_ok=True)
         new_file = not os.path.exists(OUT_FILE)
         self._fp = open(OUT_FILE, 'a', newline='')
         self._writer = csv.writer(self._fp)
