@@ -1,8 +1,8 @@
-*.pdf
+*.zip
 !Summary_Report*.pdf
 !**/Summary_Report*.pdf
 !**/Report.pdf
-
+陈颖乐——大二——(电路+电控)/
 # 构建产物与虚拟环境
 .venv/
 __pycache__/
