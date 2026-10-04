@@ -1,0 +1,1298 @@
+[INFO] [1790769127.337743672] [exploration]: 探索节点已启动，转向容差 10°，转向角速度 0.50 rad/s
+[INFO] [1790769127.369381845] [exploration]: | 直行 d=1.90
+[INFO] [1790769127.469991176] [exploration]: | 直行 d=1.92
+[INFO] [1790769127.571035022] [exploration]: | 直行 d=1.90
+[INFO] [1790769127.671437181] [exploration]: | 直行 d=1.89
+[INFO] [1790769127.771734062] [exploration]: | 直行 d=1.87
+[INFO] [1790769127.870795042] [exploration]: | 直行 d=1.85
+[INFO] [1790769127.970979708] [exploration]: | 直行 d=1.82
+[INFO] [1790769128.071994245] [exploration]: | 直行 d=1.79
+[INFO] [1790769128.271766472] [exploration]: | 直行 d=1.76
+[INFO] [1790769128.372022427] [exploration]: | 直行 d=1.73
+[INFO] [1790769128.471647350] [exploration]: | 直行 d=1.72
+[INFO] [1790769128.570570619] [exploration]: | 直行 d=1.70
+[INFO] [1790769128.671531396] [exploration]: | 直行 d=1.68
+[INFO] [1790769128.771475765] [exploration]: | 直行 d=1.66
+[INFO] [1790769128.871637425] [exploration]: | 直行 d=1.64
+[INFO] [1790769128.972152358] [exploration]: | 直行 d=1.62
+[INFO] [1790769129.071295661] [exploration]: | 直行 d=1.59
+[INFO] [1790769129.173420584] [exploration]: | 直行 d=1.58
+[INFO] [1790769129.273130736] [exploration]: | 直行 d=1.55
+[INFO] [1790769129.373507384] [exploration]: | 直行 d=1.54
+[INFO] [1790769129.472271844] [exploration]: | 直行 d=1.52
+[INFO] [1790769129.571912054] [exploration]: | 直行 d=1.49
+[INFO] [1790769129.773448952] [exploration]: | 直行 d=1.46
+[INFO] [1790769129.873715578] [exploration]: | 直行 d=1.44
+[INFO] [1790769129.973769621] [exploration]: | 直行 d=1.43
+[INFO] [1790769130.073334849] [exploration]: | 直行 d=1.40
+[INFO] [1790769130.173304058] [exploration]: | 直行 d=1.38
+[INFO] [1790769130.275031230] [exploration]: | 直行 d=1.36
+[INFO] [1790769130.374700754] [exploration]: | 直行 d=1.35
+[INFO] [1790769130.475546297] [exploration]: | 直行 d=1.32
+[INFO] [1790769130.574617932] [exploration]: | 直行 d=1.30
+[INFO] [1790769130.675837821] [exploration]: | 直行 d=1.29
+[INFO] [1790769130.774771963] [exploration]: | 直行 d=1.26
+[INFO] [1790769130.875662791] [exploration]: | 直行 d=1.24
+[INFO] [1790769130.974958015] [exploration]: | 直行 d=1.22
+[INFO] [1790769131.074602162] [exploration]: | 直行 d=1.20
+[INFO] [1790769131.174759636] [exploration]: | 直行 d=1.19
+[INFO] [1790769131.275705304] [exploration]: | 直行 d=1.16
+[INFO] [1790769131.375128704] [exploration]: | 直行 d=1.14
+[INFO] [1790769131.475497348] [exploration]: | 直行 d=1.12
+[INFO] [1790769131.575310682] [exploration]: | 直行 d=1.11
+[INFO] [1790769131.676445267] [exploration]: | 直行 d=1.07
+[INFO] [1790769131.775912058] [exploration]: | 直行 d=1.05
+[INFO] [1790769131.976470507] [exploration]: | 直行 d=1.03
+[INFO] [1790769132.076792307] [exploration]: | 直行 d=1.00
+[INFO] [1790769132.176426464] [exploration]: | 直行 d=0.98
+[INFO] [1790769132.277014170] [exploration]: | 直行 d=0.97
+[INFO] [1790769132.377467552] [exploration]: | 直行 d=0.95
+[INFO] [1790769132.476863352] [exploration]: | 直行 d=0.92
+[INFO] [1790769132.576922934] [exploration]: | 直行 d=0.90
+[INFO] [1790769132.676828537] [exploration]: | 直行 d=0.88
+[INFO] [1790769132.777832333] [exploration]: | 直行 d=0.86
+[INFO] [1790769132.879871664] [exploration]: | 直行 d=0.85
+[INFO] [1790769132.978455803] [exploration]: | 直行 d=0.82
+[INFO] [1790769133.078750275] [exploration]: | 直行 d=0.81
+[INFO] [1790769133.178654315] [exploration]: | 减速 d=0.78
+[INFO] [1790769133.283045329] [exploration]: | 进入转向 goal=-86° 危险 d=0.14
+[INFO] [1790769133.378756874] [exploration]: | 转向中 goal=-86°
+[INFO] [1790769133.879705850] [exploration]: | 转向完成，停稳 front=1.59
+[INFO] [1790769133.980188124] [exploration]: | 直行 d=1.49
+[INFO] [1790769134.080275911] [exploration]: | 直行 d=1.48
+[INFO] [1790769134.380396943] [exploration]: | 直行 d=1.46
+[INFO] [1790769134.479840649] [exploration]: | 直行 d=1.44
+[INFO] [1790769134.579924151] [exploration]: | 直行 d=1.45
+[INFO] [1790769134.679642784] [exploration]: | 直行 d=1.43
+[INFO] [1790769134.781230327] [exploration]: | 直行 d=1.41
+[INFO] [1790769134.881663663] [exploration]: | 直行 d=1.40
+[INFO] [1790769134.982087385] [exploration]: | 直行 d=1.38
+[INFO] [1790769135.181275029] [exploration]: | 直行 d=1.35
+[INFO] [1790769135.282239267] [exploration]: | 直行 d=1.33
+[INFO] [1790769135.481993527] [exploration]: | 直行 d=1.35
+[INFO] [1790769135.582758627] [exploration]: | 直行 d=1.32
+[INFO] [1790769135.782585488] [exploration]: | 直行 d=1.30
+[INFO] [1790769135.882670943] [exploration]: | 直行 d=1.35
+[INFO] [1790769135.983147495] [exploration]: | 直行 d=1.34
+[INFO] [1790769136.183133663] [exploration]: | 直行 d=1.32
+[INFO] [1790769136.284200367] [exploration]: | 直行 d=1.30
+[INFO] [1790769136.584132312] [exploration]: | 直行 d=1.29
+[INFO] [1790769136.684642904] [exploration]: | 直行 d=1.26
+[INFO] [1790769136.782475376] [exploration]: | 直行 d=1.24
+[INFO] [1790769136.883147838] [exploration]: | 直行 d=1.20
+[INFO] [1790769136.983643977] [exploration]: | 直行 d=1.22
+[INFO] [1790769137.184282913] [exploration]: | 直行 d=1.18
+[INFO] [1790769137.284743816] [exploration]: | 直行 d=1.17
+[INFO] [1790769137.586043401] [exploration]: | 直行 d=1.14
+[INFO] [1790769137.785796758] [exploration]: | 直行 d=1.13
+[INFO] [1790769137.985596337] [exploration]: | 直行 d=1.10
+[INFO] [1790769138.185054037] [exploration]: | 直行 d=1.08
+[INFO] [1790769138.286307324] [exploration]: | 直行 d=1.07
+[INFO] [1790769138.386435641] [exploration]: | 直行 d=1.06
+[INFO] [1790769138.487191422] [exploration]: | 直行 d=1.05
+[INFO] [1790769138.586835319] [exploration]: | 直行 d=1.04
+[INFO] [1790769138.688116650] [exploration]: | 直行 d=1.03
+[INFO] [1790769138.888318636] [exploration]: | 直行 d=1.01
+[INFO] [1790769138.987099457] [exploration]: | 直行 d=0.99
+[INFO] [1790769139.188481927] [exploration]: | 直行 d=0.97
+[INFO] [1790769139.289553098] [exploration]: | 直行 d=0.96
+[INFO] [1790769139.388423558] [exploration]: | 直行 d=0.95
+[INFO] [1790769139.488291806] [exploration]: | 直行 d=0.94
+[INFO] [1790769139.588867223] [exploration]: | 直行 d=0.91
+[INFO] [1790769139.789401030] [exploration]: | 直行 d=0.90
+[INFO] [1790769139.889383011] [exploration]: | 直行 d=0.89
+[INFO] [1790769139.988891634] [exploration]: | 直行 d=0.90
+[INFO] [1790769140.089834637] [exploration]: | 直行 d=0.89
+[INFO] [1790769140.190108297] [exploration]: | 直行 d=0.87
+[INFO] [1790769140.290207299] [exploration]: | 直行 d=0.85
+[INFO] [1790769140.390442016] [exploration]: | 直行 d=0.84
+[INFO] [1790769140.490088122] [exploration]: | 直行 d=0.82
+[INFO] [1790769140.591267974] [exploration]: | 直行 d=0.81
+[INFO] [1790769140.691183360] [exploration]: | 减速 d=0.79
+[INFO] [1790769140.792298490] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769140.897049128] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769140.990706200] [exploration]: | 减速 d=0.79
+[INFO] [1790769141.091474597] [exploration]: | 减速 d=0.80
+[INFO] [1790769141.194788860] [exploration]: | 进入转向 goal=18° 危险 d=0.40
+[INFO] [1790769141.291393162] [exploration]: | 转向中 goal=18°
+[INFO] [1790769141.692323180] [exploration]: | 转向完成，停稳 front=0.92
+[INFO] [1790769141.795625386] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769141.897055763] [exploration]: | 持续倒退
+[INFO] [1790769142.098039356] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769142.196019407] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769142.297788485] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769142.398495412] [exploration]: | 进入转向 goal=6° 危险 d=0.40
+[INFO] [1790769142.493939629] [exploration]: | 转向中 goal=6°
+[INFO] [1790769142.593022331] [exploration]: | 转向完成，停稳 front=1.35
+[INFO] [1790769142.694277379] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769142.799214282] [exploration]: | 持续倒退
+[INFO] [1790769142.898678486] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769142.994929202] [exploration]: | 直行 d=1.21
+[INFO] [1790769143.096797448] [exploration]: | 直行 d=1.22
+[INFO] [1790769143.195965947] [exploration]: | 直行 d=1.24
+[INFO] [1790769143.496893824] [exploration]: | 直行 d=1.23
+[INFO] [1790769143.596325537] [exploration]: | 直行 d=1.24
+[INFO] [1790769143.695520298] [exploration]: | 直行 d=1.20
+[INFO] [1790769143.896818665] [exploration]: | 直行 d=1.22
+[INFO] [1790769143.996490262] [exploration]: | 直行 d=1.23
+[INFO] [1790769144.095807878] [exploration]: | 直行 d=1.21
+[INFO] [1790769144.196881339] [exploration]: | 直行 d=1.20
+[INFO] [1790769144.397995453] [exploration]: | 直行 d=1.18
+[INFO] [1790769144.797724543] [exploration]: | 直行 d=1.17
+[INFO] [1790769144.897414930] [exploration]: | 直行 d=1.19
+[INFO] [1790769144.999647463] [exploration]: | 直行 d=1.15
+[INFO] [1790769145.098701705] [exploration]: | 直行 d=1.16
+[INFO] [1790769145.399346190] [exploration]: | 直行 d=1.15
+[INFO] [1790769145.499228774] [exploration]: | 直行 d=1.13
+[INFO] [1790769145.599297883] [exploration]: | 直行 d=1.16
+[INFO] [1790769145.699734096] [exploration]: | 直行 d=1.13
+[INFO] [1790769146.000467170] [exploration]: | 直行 d=1.12
+[INFO] [1790769146.100549053] [exploration]: | 直行 d=1.14
+[INFO] [1790769146.200629727] [exploration]: | 直行 d=1.11
+[INFO] [1790769146.299861823] [exploration]: | 直行 d=1.12
+[INFO] [1790769146.500981722] [exploration]: | 直行 d=1.10
+[INFO] [1790769146.600530344] [exploration]: | 直行 d=1.11
+[INFO] [1790769146.701789114] [exploration]: | 直行 d=1.10
+[INFO] [1790769146.802070039] [exploration]: | 直行 d=1.11
+[INFO] [1790769146.901370466] [exploration]: | 直行 d=1.10
+[INFO] [1790769147.002538217] [exploration]: | 直行 d=1.09
+[INFO] [1790769147.102487560] [exploration]: | 直行 d=1.07
+[INFO] [1790769147.202717132] [exploration]: | 直行 d=1.08
+[INFO] [1790769147.403213805] [exploration]: | 直行 d=1.07
+[INFO] [1790769147.504009956] [exploration]: | 直行 d=1.06
+[INFO] [1790769147.804198519] [exploration]: | 直行 d=1.12
+[INFO] [1790769147.904312687] [exploration]: | 直行 d=1.06
+[INFO] [1790769148.005789409] [exploration]: | 直行 d=1.05
+[INFO] [1790769148.104909142] [exploration]: | 直行 d=1.06
+[INFO] [1790769148.205125992] [exploration]: | 直行 d=1.04
+[INFO] [1790769148.304925650] [exploration]: | 直行 d=1.05
+[INFO] [1790769148.405172003] [exploration]: | 直行 d=1.03
+[INFO] [1790769148.805805067] [exploration]: | 直行 d=1.01
+[INFO] [1790769148.906936555] [exploration]: | 直行 d=1.02
+[INFO] [1790769149.006549751] [exploration]: | 直行 d=1.00
+[INFO] [1790769149.106437016] [exploration]: | 直行 d=0.99
+[INFO] [1790769149.206853234] [exploration]: | 直行 d=1.00
+[INFO] [1790769149.308048554] [exploration]: | 直行 d=0.99
+[INFO] [1790769149.407101899] [exploration]: | 直行 d=0.97
+[INFO] [1790769149.508703032] [exploration]: | 直行 d=0.98
+[INFO] [1790769149.607782631] [exploration]: | 直行 d=0.97
+[INFO] [1790769149.708414505] [exploration]: | 直行 d=0.99
+[INFO] [1790769149.909196948] [exploration]: | 直行 d=0.98
+[INFO] [1790769150.009576083] [exploration]: | 直行 d=0.96
+[INFO] [1790769150.109289117] [exploration]: | 直行 d=0.95
+[INFO] [1790769150.408924745] [exploration]: | 直行 d=0.94
+[INFO] [1790769150.608558309] [exploration]: | 直行 d=0.93
+[INFO] [1790769150.708948077] [exploration]: | 直行 d=0.94
+[INFO] [1790769150.910396235] [exploration]: | 直行 d=0.90
+[INFO] [1790769151.010122263] [exploration]: | 直行 d=0.94
+[INFO] [1790769151.210577169] [exploration]: | 直行 d=0.92
+[INFO] [1790769151.310478346] [exploration]: | 直行 d=0.93
+[INFO] [1790769151.411150441] [exploration]: | 直行 d=0.90
+[INFO] [1790769151.510911611] [exploration]: | 直行 d=0.89
+[INFO] [1790769151.611807949] [exploration]: | 直行 d=0.90
+[INFO] [1790769151.712132141] [exploration]: | 直行 d=0.89
+[INFO] [1790769151.810574726] [exploration]: | 直行 d=0.90
+[INFO] [1790769152.111656732] [exploration]: | 直行 d=0.87
+[INFO] [1790769152.211274901] [exploration]: | 直行 d=0.86
+[INFO] [1790769152.311495382] [exploration]: | 直行 d=0.88
+[INFO] [1790769152.411508624] [exploration]: | 直行 d=0.86
+[INFO] [1790769152.511706331] [exploration]: | 直行 d=0.87
+[INFO] [1790769152.711443230] [exploration]: | 直行 d=0.83
+[INFO] [1790769152.811900614] [exploration]: | 直行 d=0.87
+[INFO] [1790769152.912596618] [exploration]: | 直行 d=0.85
+[INFO] [1790769153.013777969] [exploration]: | 直行 d=0.87
+[INFO] [1790769153.113320791] [exploration]: | 直行 d=0.84
+[INFO] [1790769153.214240840] [exploration]: | 直行 d=0.85
+[INFO] [1790769153.312611969] [exploration]: | 直行 d=0.84
+[INFO] [1790769153.412769475] [exploration]: | 直行 d=0.83
+[INFO] [1790769153.512651486] [exploration]: | 直行 d=0.82
+[INFO] [1790769153.613051242] [exploration]: | 直行 d=0.81
+[INFO] [1790769153.914933458] [exploration]: | 减速 d=0.80
+[INFO] [1790769154.014665624] [exploration]: | 减速 d=0.71
+[INFO] [1790769154.114443257] [exploration]: | 直行 d=0.93
+[INFO] [1790769154.218481311] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769154.316121374] [exploration]: | 持续倒退
+[INFO] [1790769154.418187460] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769154.515704777] [exploration]: | 直行 d=0.93
+[INFO] [1790769154.616365620] [exploration]: | 进入转向 goal=10° 危险 d=0.15
+[INFO] [1790769154.714158236] [exploration]: | 转向中 goal=10°
+[INFO] [1790769155.014195199] [exploration]: | 转向完成，停稳 front=0.87
+[INFO] [1790769155.115764135] [exploration]: | 直行 d=0.90
+[INFO] [1790769155.215950057] [exploration]: | 直行 d=0.88
+[INFO] [1790769155.315262736] [exploration]: | 直行 d=0.89
+[INFO] [1790769155.416062476] [exploration]: | 直行 d=0.90
+[INFO] [1790769155.517516590] [exploration]: | 直行 d=0.88
+[INFO] [1790769155.717619568] [exploration]: | 直行 d=0.90
+[INFO] [1790769155.917884784] [exploration]: | 直行 d=0.89
+[INFO] [1790769156.016770835] [exploration]: | 直行 d=0.90
+[INFO] [1790769156.117782362] [exploration]: | 直行 d=0.88
+[INFO] [1790769156.217210320] [exploration]: | 直行 d=0.87
+[INFO] [1790769156.417730396] [exploration]: | 直行 d=0.88
+[INFO] [1790769156.516932693] [exploration]: | 直行 d=0.87
+[INFO] [1790769156.718751915] [exploration]: | 直行 d=0.86
+[INFO] [1790769156.818003503] [exploration]: | 直行 d=0.87
+[INFO] [1790769156.918891081] [exploration]: | 直行 d=0.86
+[INFO] [1790769157.018741731] [exploration]: | 直行 d=0.87
+[INFO] [1790769157.117858387] [exploration]: | 直行 d=0.88
+[INFO] [1790769157.219137233] [exploration]: | 直行 d=0.86
+[INFO] [1790769157.318778610] [exploration]: | 直行 d=0.87
+[INFO] [1790769157.419500976] [exploration]: | 直行 d=0.85
+[INFO] [1790769157.520167379] [exploration]: | 直行 d=0.86
+[INFO] [1790769157.619775735] [exploration]: | 直行 d=0.88
+[INFO] [1790769157.718994798] [exploration]: | 直行 d=0.84
+[INFO] [1790769157.820275554] [exploration]: | 直行 d=0.86
+[INFO] [1790769157.920148989] [exploration]: | 直行 d=0.85
+[INFO] [1790769158.019474834] [exploration]: | 直行 d=0.86
+[INFO] [1790769158.120144481] [exploration]: | 直行 d=0.84
+[INFO] [1790769158.220427711] [exploration]: | 直行 d=0.86
+[INFO] [1790769158.320545572] [exploration]: | 直行 d=0.83
+[INFO] [1790769158.521042328] [exploration]: | 直行 d=0.84
+[INFO] [1790769158.621758463] [exploration]: | 直行 d=0.83
+[INFO] [1790769158.721280182] [exploration]: | 直行 d=0.82
+[INFO] [1790769158.821520567] [exploration]: | 直行 d=0.84
+[INFO] [1790769158.921819646] [exploration]: | 直行 d=0.81
+[INFO] [1790769159.022692093] [exploration]: | 直行 d=0.84
+[INFO] [1790769159.122404371] [exploration]: | 直行 d=0.83
+[INFO] [1790769159.222432522] [exploration]: | 直行 d=0.84
+[INFO] [1790769159.323880811] [exploration]: | 直行 d=0.82
+[INFO] [1790769159.424488138] [exploration]: | 直行 d=0.81
+[INFO] [1790769159.523031417] [exploration]: | 直行 d=0.83
+[INFO] [1790769159.623539113] [exploration]: | 直行 d=0.82
+[INFO] [1790769159.723643693] [exploration]: | 直行 d=0.81
+[INFO] [1790769159.923190912] [exploration]: | 直行 d=0.83
+[INFO] [1790769160.024219413] [exploration]: | 减速 d=0.75
+[INFO] [1790769160.128609244] [exploration]: | 进入转向 goal=84° 危险 d=0.14
+[INFO] [1790769160.225487534] [exploration]: | 转向中 goal=84°
+[INFO] [1790769160.424730718] [exploration]: | 转向完成，停稳 front=1.07
+[INFO] [1790769160.524033511] [exploration]: | 直行 d=1.41
+[INFO] [1790769160.629782475] [exploration]: | 进入转向 goal=28° 危险 d=0.14
+[INFO] [1790769160.725498052] [exploration]: | 转向完成，停稳 front=1.42
+[INFO] [1790769160.828651567] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769160.929348503] [exploration]: | 持续倒退
+[INFO] [1790769161.628117946] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769161.729089488] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769161.830111286] [exploration]: | 持续倒退
+[INFO] [1790769161.930731413] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769162.027492347] [exploration]: | 直行 d=0.98
+[INFO] [1790769162.128908097] [exploration]: | 进入转向 goal=4° 危险 d=0.16
+[INFO] [1790769162.227712568] [exploration]: | 转向中 goal=4°
+[INFO] [1790769162.327655355] [exploration]: | 转向完成，停稳 front=1.45
+[INFO] [1790769162.428597879] [exploration]: | 直行 d=1.47
+[INFO] [1790769162.528138217] [exploration]: | 直行 d=1.48
+[INFO] [1790769162.628483349] [exploration]: | 直行 d=1.49
+[INFO] [1790769162.729529262] [exploration]: | 直行 d=1.50
+[INFO] [1790769162.828754157] [exploration]: | 直行 d=1.49
+[INFO] [1790769162.929607543] [exploration]: | 直行 d=1.41
+[INFO] [1790769163.028513449] [exploration]: | 直行 d=1.40
+[INFO] [1790769163.128549095] [exploration]: | 直行 d=1.42
+[INFO] [1790769163.228492172] [exploration]: | 直行 d=1.40
+[INFO] [1790769163.330791168] [exploration]: | 直行 d=1.39
+[INFO] [1790769163.629721661] [exploration]: | 直行 d=1.37
+[INFO] [1790769163.730160129] [exploration]: | 直行 d=1.36
+[INFO] [1790769163.830673057] [exploration]: | 直行 d=1.34
+[INFO] [1790769164.130303470] [exploration]: | 直行 d=1.33
+[INFO] [1790769164.230692067] [exploration]: | 直行 d=1.34
+[INFO] [1790769164.332372332] [exploration]: | 直行 d=1.32
+[INFO] [1790769164.531304910] [exploration]: | 直行 d=1.30
+[INFO] [1790769164.631901154] [exploration]: | 直行 d=1.29
+[INFO] [1790769164.831208740] [exploration]: | 直行 d=1.27
+[INFO] [1790769164.931409383] [exploration]: | 直行 d=1.25
+[INFO] [1790769165.032294690] [exploration]: | 直行 d=1.26
+[INFO] [1790769165.132314553] [exploration]: | 直行 d=1.28
+[INFO] [1790769165.232281264] [exploration]: | 直行 d=1.23
+[INFO] [1790769165.331979532] [exploration]: | 直行 d=1.25
+[INFO] [1790769165.432260747] [exploration]: | 直行 d=1.24
+[INFO] [1790769165.633065763] [exploration]: | 直行 d=1.23
+[INFO] [1790769165.732702309] [exploration]: | 直行 d=1.20
+[INFO] [1790769166.032659305] [exploration]: | 直行 d=1.18
+[INFO] [1790769166.133327481] [exploration]: | 直行 d=1.17
+[INFO] [1790769166.233769065] [exploration]: | 直行 d=1.16
+[INFO] [1790769166.332933897] [exploration]: | 直行 d=1.17
+[INFO] [1790769166.434190991] [exploration]: | 直行 d=1.16
+[INFO] [1790769166.535570938] [exploration]: | 直行 d=1.17
+[INFO] [1790769166.633039580] [exploration]: | 直行 d=1.13
+[INFO] [1790769166.734508464] [exploration]: | 直行 d=1.14
+[INFO] [1790769166.835100222] [exploration]: | 直行 d=1.13
+[INFO] [1790769166.934436115] [exploration]: | 直行 d=1.12
+[INFO] [1790769167.034344218] [exploration]: | 直行 d=1.09
+[INFO] [1790769167.135322444] [exploration]: | 直行 d=1.10
+[INFO] [1790769167.235438825] [exploration]: | 直行 d=1.11
+[INFO] [1790769167.334846989] [exploration]: | 直行 d=1.08
+[INFO] [1790769167.436205164] [exploration]: | 直行 d=1.07
+[INFO] [1790769167.636254739] [exploration]: | 直行 d=1.06
+[INFO] [1790769167.735257052] [exploration]: | 直行 d=1.05
+[INFO] [1790769167.935600826] [exploration]: | 直行 d=1.04
+[INFO] [1790769168.035992056] [exploration]: | 直行 d=0.99
+[INFO] [1790769168.136725648] [exploration]: | 直行 d=0.97
+[INFO] [1790769168.236407067] [exploration]: | 直行 d=0.98
+[INFO] [1790769168.336510689] [exploration]: | 直行 d=0.97
+[INFO] [1790769168.436212743] [exploration]: | 直行 d=0.95
+[INFO] [1790769168.537608605] [exploration]: | 直行 d=0.96
+[INFO] [1790769168.636926822] [exploration]: | 直行 d=0.95
+[INFO] [1790769168.836872390] [exploration]: | 直行 d=0.94
+[INFO] [1790769168.937638616] [exploration]: | 直行 d=0.92
+[INFO] [1790769169.037141048] [exploration]: | 直行 d=0.91
+[INFO] [1790769169.237644911] [exploration]: | 直行 d=0.90
+[INFO] [1790769169.437329709] [exploration]: | 直行 d=0.88
+[INFO] [1790769169.538180446] [exploration]: | 直行 d=0.89
+[INFO] [1790769169.637843320] [exploration]: | 直行 d=0.87
+[INFO] [1790769169.838580333] [exploration]: | 直行 d=0.86
+[INFO] [1790769169.939294926] [exploration]: | 直行 d=0.85
+[INFO] [1790769170.038112767] [exploration]: | 直行 d=0.82
+[INFO] [1790769170.138590975] [exploration]: | 直行 d=0.84
+[INFO] [1790769170.238172002] [exploration]: | 直行 d=0.83
+[INFO] [1790769170.338599093] [exploration]: | 直行 d=0.82
+[INFO] [1790769170.539160633] [exploration]: | 开阔（有效回波太少）
+[INFO] [1790769175.347452942] [exploration]: | 直行 d=3.48
+[INFO] [1790769175.446036138] [exploration]: | 直行 d=3.46
+[INFO] [1790769175.547178609] [exploration]: | 直行 d=3.45
+[INFO] [1790769175.648188780] [exploration]: | 直行 d=3.43
+[INFO] [1790769175.746888891] [exploration]: | 直行 d=3.41
+[INFO] [1790769175.846952911] [exploration]: | 直行 d=3.39
+[INFO] [1790769175.947408304] [exploration]: | 直行 d=3.37
+[INFO] [1790769176.047858307] [exploration]: | 直行 d=3.35
+[INFO] [1790769176.148670361] [exploration]: | 直行 d=3.33
+[INFO] [1790769176.249081855] [exploration]: | 直行 d=3.32
+[INFO] [1790769176.349141342] [exploration]: | 直行 d=3.29
+[INFO] [1790769176.447962898] [exploration]: | 直行 d=3.28
+[INFO] [1790769176.550449443] [exploration]: | 直行 d=3.26
+[INFO] [1790769176.649202114] [exploration]: | 直行 d=3.23
+[INFO] [1790769176.749764829] [exploration]: | 直行 d=3.21
+[INFO] [1790769176.848589514] [exploration]: | 直行 d=3.19
+[INFO] [1790769176.949509193] [exploration]: | 直行 d=3.17
+[INFO] [1790769177.049468106] [exploration]: | 直行 d=3.16
+[INFO] [1790769177.149994026] [exploration]: | 直行 d=3.14
+[INFO] [1790769177.251493937] [exploration]: | 直行 d=3.11
+[INFO] [1790769177.349920185] [exploration]: | 直行 d=3.09
+[INFO] [1790769177.450462916] [exploration]: | 直行 d=3.08
+[INFO] [1790769177.551111248] [exploration]: | 直行 d=3.05
+[INFO] [1790769177.650346278] [exploration]: | 直行 d=3.04
+[INFO] [1790769177.750663605] [exploration]: | 直行 d=3.01
+[INFO] [1790769177.850497359] [exploration]: | 直行 d=2.99
+[INFO] [1790769177.951012199] [exploration]: | 直行 d=2.98
+[INFO] [1790769178.051926944] [exploration]: | 直行 d=2.95
+[INFO] [1790769178.151701489] [exploration]: | 直行 d=2.93
+[INFO] [1790769178.251939470] [exploration]: | 直行 d=2.92
+[INFO] [1790769178.352449640] [exploration]: | 直行 d=2.89
+[INFO] [1790769178.453144666] [exploration]: | 直行 d=2.88
+[INFO] [1790769178.553163294] [exploration]: | 直行 d=2.85
+[INFO] [1790769178.651662393] [exploration]: | 直行 d=2.84
+[INFO] [1790769178.753856734] [exploration]: | 直行 d=2.82
+[INFO] [1790769178.854014747] [exploration]: | 直行 d=2.80
+[INFO] [1790769178.953886088] [exploration]: | 直行 d=2.78
+[INFO] [1790769179.052975496] [exploration]: | 直行 d=2.76
+[INFO] [1790769179.153087075] [exploration]: | 直行 d=2.74
+[INFO] [1790769179.254196474] [exploration]: | 直行 d=2.71
+[INFO] [1790769179.354270135] [exploration]: | 直行 d=2.70
+[INFO] [1790769179.453989026] [exploration]: | 直行 d=2.68
+[INFO] [1790769179.554090646] [exploration]: | 直行 d=2.65
+[INFO] [1790769179.654038624] [exploration]: | 直行 d=2.64
+[INFO] [1790769179.755107809] [exploration]: | 直行 d=2.62
+[INFO] [1790769179.854020996] [exploration]: | 直行 d=2.59
+[INFO] [1790769179.954105618] [exploration]: | 直行 d=2.58
+[INFO] [1790769180.054004261] [exploration]: | 直行 d=2.56
+[INFO] [1790769180.156045107] [exploration]: | 直行 d=2.54
+[INFO] [1790769180.255665172] [exploration]: | 直行 d=2.52
+[INFO] [1790769180.356610560] [exploration]: | 直行 d=2.50
+[INFO] [1790769180.455721197] [exploration]: | 直行 d=2.48
+[INFO] [1790769180.557122228] [exploration]: | 直行 d=2.46
+[INFO] [1790769180.656250441] [exploration]: | 直行 d=2.44
+[INFO] [1790769180.757301075] [exploration]: | 直行 d=2.42
+[INFO] [1790769180.857710162] [exploration]: | 直行 d=2.40
+[INFO] [1790769180.956552750] [exploration]: | 直行 d=2.37
+[INFO] [1790769181.158027745] [exploration]: | 直行 d=2.34
+[INFO] [1790769181.257071532] [exploration]: | 直行 d=2.31
+[INFO] [1790769181.357077081] [exploration]: | 直行 d=2.30
+[INFO] [1790769181.458495292] [exploration]: | 直行 d=2.28
+[INFO] [1790769181.557665642] [exploration]: | 直行 d=2.26
+[INFO] [1790769181.658717691] [exploration]: | 直行 d=2.24
+[INFO] [1790769181.758701360] [exploration]: | 直行 d=2.22
+[INFO] [1790769181.858618106] [exploration]: | 直行 d=2.20
+[INFO] [1790769181.958589756] [exploration]: | 直行 d=2.17
+[INFO] [1790769182.059124278] [exploration]: | 直行 d=2.15
+[INFO] [1790769182.258733847] [exploration]: | 直行 d=2.11
+[INFO] [1790769182.360389727] [exploration]: | 直行 d=2.10
+[INFO] [1790769182.458982995] [exploration]: | 直行 d=2.08
+[INFO] [1790769182.559021028] [exploration]: | 直行 d=2.06
+[INFO] [1790769182.659586454] [exploration]: | 直行 d=2.04
+[INFO] [1790769182.759709671] [exploration]: | 直行 d=2.02
+[INFO] [1790769182.861327592] [exploration]: | 直行 d=1.99
+[INFO] [1790769182.960544184] [exploration]: | 直行 d=1.97
+[INFO] [1790769183.060251430] [exploration]: | 直行 d=1.96
+[INFO] [1790769183.160649439] [exploration]: | 直行 d=1.94
+[INFO] [1790769183.260353701] [exploration]: | 直行 d=1.92
+[INFO] [1790769183.360337775] [exploration]: | 直行 d=1.91
+[INFO] [1790769183.460266195] [exploration]: | 直行 d=1.88
+[INFO] [1790769183.560493514] [exploration]: | 直行 d=1.85
+[INFO] [1790769183.660986222] [exploration]: | 直行 d=1.84
+[INFO] [1790769183.761509647] [exploration]: | 直行 d=1.83
+[INFO] [1790769183.863257678] [exploration]: | 直行 d=1.80
+[INFO] [1790769183.963256167] [exploration]: | 直行 d=1.78
+[INFO] [1790769184.062800789] [exploration]: | 直行 d=1.76
+[INFO] [1790769184.161955614] [exploration]: | 直行 d=1.74
+[INFO] [1790769184.262165333] [exploration]: | 直行 d=1.73
+[INFO] [1790769184.362566012] [exploration]: | 直行 d=1.71
+[INFO] [1790769184.463867873] [exploration]: | 直行 d=1.68
+[INFO] [1790769184.563047474] [exploration]: | 直行 d=1.67
+[INFO] [1790769184.663183305] [exploration]: | 直行 d=1.64
+[INFO] [1790769184.762400392] [exploration]: | 直行 d=1.62
+[INFO] [1790769184.863894061] [exploration]: | 直行 d=1.61
+[INFO] [1790769184.962276535] [exploration]: | 直行 d=1.58
+[INFO] [1790769185.063086592] [exploration]: | 直行 d=1.57
+[INFO] [1790769185.162965906] [exploration]: | 直行 d=1.55
+[INFO] [1790769185.262924588] [exploration]: | 直行 d=1.52
+[INFO] [1790769185.362901262] [exploration]: | 直行 d=1.50
+[INFO] [1790769185.462883495] [exploration]: | 直行 d=1.48
+[INFO] [1790769185.563182209] [exploration]: | 直行 d=1.46
+[INFO] [1790769185.662899997] [exploration]: | 直行 d=1.44
+[INFO] [1790769185.763045963] [exploration]: | 直行 d=1.42
+[INFO] [1790769185.863051430] [exploration]: | 直行 d=1.41
+[INFO] [1790769185.963434571] [exploration]: | 直行 d=1.38
+[INFO] [1790769186.063263997] [exploration]: | 直行 d=1.36
+[INFO] [1790769186.164460165] [exploration]: | 直行 d=1.35
+[INFO] [1790769186.264331350] [exploration]: | 直行 d=1.33
+[INFO] [1790769186.364817698] [exploration]: | 直行 d=1.31
+[INFO] [1790769186.464156503] [exploration]: | 直行 d=1.28
+[INFO] [1790769186.564165616] [exploration]: | 直行 d=1.26
+[INFO] [1790769186.663994785] [exploration]: | 直行 d=1.24
+[INFO] [1790769186.763863147] [exploration]: | 直行 d=1.23
+[INFO] [1790769186.864821332] [exploration]: | 直行 d=1.20
+[INFO] [1790769186.965261436] [exploration]: | 直行 d=1.18
+[INFO] [1790769187.065166264] [exploration]: | 直行 d=1.16
+[INFO] [1790769187.165011348] [exploration]: | 直行 d=1.14
+[INFO] [1790769187.265865550] [exploration]: | 直行 d=1.12
+[INFO] [1790769187.366156812] [exploration]: | 直行 d=1.11
+[INFO] [1790769187.465321733] [exploration]: | 直行 d=1.08
+[INFO] [1790769187.566302730] [exploration]: | 直行 d=1.06
+[INFO] [1790769187.666738130] [exploration]: | 直行 d=1.05
+[INFO] [1790769187.768033805] [exploration]: | 直行 d=1.03
+[INFO] [1790769187.867524470] [exploration]: | 直行 d=1.01
+[INFO] [1790769187.966141000] [exploration]: | 直行 d=0.98
+[INFO] [1790769188.067123877] [exploration]: | 直行 d=0.97
+[INFO] [1790769188.166648466] [exploration]: | 直行 d=0.94
+[INFO] [1790769188.267167810] [exploration]: | 直行 d=0.93
+[INFO] [1790769188.367291957] [exploration]: | 直行 d=0.91
+[INFO] [1790769188.467109731] [exploration]: | 直行 d=0.88
+[INFO] [1790769188.568558856] [exploration]: | 直行 d=0.86
+[INFO] [1790769188.668000461] [exploration]: | 直行 d=0.84
+[INFO] [1790769188.767165745] [exploration]: | 直行 d=0.83
+[INFO] [1790769188.868799753] [exploration]: | 直行 d=0.81
+[INFO] [1790769188.968097895] [exploration]: | 减速 d=0.79
+[INFO] [1790769189.071505012] [exploration]: | 进入转向 goal=86° 危险 d=0.14
+[INFO] [1790769189.168737859] [exploration]: | 转向中 goal=86°
+[INFO] [1790769190.071694063] [exploration]: | 转向完成，停稳 front=0.81
+[INFO] [1790769190.170399545] [exploration]: | 直行 d=0.83
+[INFO] [1790769190.371917304] [exploration]: | 直行 d=0.81
+[INFO] [1790769190.472017858] [exploration]: | 减速 d=0.79
+[INFO] [1790769190.577410944] [exploration]: | 进入转向 goal=76° 危险 d=0.13
+[INFO] [1790769190.670907833] [exploration]: | 转向中 goal=76°
+[INFO] [1790769191.273281706] [exploration]: | 转向完成，停稳 front=0.89
+[INFO] [1790769191.372997526] [exploration]: | 直行 d=0.93
+[INFO] [1790769191.472004729] [exploration]: | 直行 d=0.92
+[INFO] [1790769191.571858375] [exploration]: | 直行 d=0.94
+[INFO] [1790769191.671757167] [exploration]: | 直行 d=0.92
+[INFO] [1790769191.771815825] [exploration]: | 直行 d=0.90
+[INFO] [1790769191.871694260] [exploration]: | 直行 d=0.89
+[INFO] [1790769191.971823596] [exploration]: | 直行 d=0.86
+[INFO] [1790769192.072812467] [exploration]: | 直行 d=0.85
+[INFO] [1790769192.172081515] [exploration]: | 直行 d=0.83
+[INFO] [1790769192.272300888] [exploration]: | 直行 d=0.81
+[INFO] [1790769192.372545334] [exploration]: | 减速 d=0.78
+[INFO] [1790769192.574437261] [exploration]: | 进入转向 goal=-90° 危险 d=0.14
+[INFO] [1790769192.672468600] [exploration]: | 转向中 goal=-90°
+[INFO] [1790769196.580224502] [exploration]: | 转向后仍受阻，倒退
+[INFO] [1790769196.683314838] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769196.783658048] [exploration]: | 进入转向 goal=-90° 危险 d=0.15
+[INFO] [1790769196.878768339] [exploration]: | 转向中 goal=-90°
+[INFO] [1790769197.679751010] [exploration]: | 转向完成，停稳 front=0.81
+[INFO] [1790769197.780315746] [exploration]: | 直行 d=0.83
+[INFO] [1790769197.879708933] [exploration]: | 直行 d=0.81
+[INFO] [1790769197.980908258] [exploration]: | 直行 d=0.82
+[INFO] [1790769198.081705804] [exploration]: | 直行 d=0.80
+[INFO] [1790769198.181945174] [exploration]: | 减速 d=0.77
+[INFO] [1790769198.286577162] [exploration]: | 进入转向 goal=-90° 危险 d=0.14
+[INFO] [1790769198.381626782] [exploration]: | 转向中 goal=-90°
+[INFO] [1790769198.981399538] [exploration]: | 转向完成，停稳 front=1.14
+[INFO] [1790769199.081973093] [exploration]: | 直行 d=1.16
+[INFO] [1790769199.181703676] [exploration]: | 直行 d=1.15
+[INFO] [1790769199.382520888] [exploration]: | 直行 d=1.13
+[INFO] [1790769199.482725490] [exploration]: | 直行 d=1.12
+[INFO] [1790769199.582620534] [exploration]: | 直行 d=1.10
+[INFO] [1790769199.682493877] [exploration]: | 直行 d=1.08
+[INFO] [1790769199.782336659] [exploration]: | 直行 d=1.07
+[INFO] [1790769199.883656799] [exploration]: | 直行 d=1.04
+[INFO] [1790769199.982190574] [exploration]: | 直行 d=1.02
+[INFO] [1790769200.082783097] [exploration]: | 直行 d=1.00
+[INFO] [1790769200.183161211] [exploration]: | 直行 d=0.98
+[INFO] [1790769200.282819352] [exploration]: | 直行 d=0.96
+[INFO] [1790769200.382760579] [exploration]: | 直行 d=0.95
+[INFO] [1790769200.482886614] [exploration]: | 直行 d=0.93
+[INFO] [1790769200.582974185] [exploration]: | 直行 d=0.91
+[INFO] [1790769200.682758033] [exploration]: | 直行 d=0.89
+[INFO] [1790769200.783118904] [exploration]: | 直行 d=0.87
+[INFO] [1790769200.883636756] [exploration]: | 直行 d=0.85
+[INFO] [1790769200.983783669] [exploration]: | 直行 d=0.83
+[INFO] [1790769201.083323441] [exploration]: | 直行 d=0.81
+[INFO] [1790769201.183727019] [exploration]: | 减速 d=0.79
+[INFO] [1790769201.285848150] [exploration]: | 进入转向 goal=-90° 危险 d=0.14
+[INFO] [1790769201.384145424] [exploration]: | 转向中 goal=-90°
+[INFO] [1790769203.088547035] [exploration]: | 转向完成，停稳 front=0.81
+[INFO] [1790769203.188833740] [exploration]: | 直行 d=0.81
+[INFO] [1790769203.288230294] [exploration]: | 直行 d=0.82
+[INFO] [1790769203.388920285] [exploration]: | 直行 d=0.80
+[INFO] [1790769203.489786024] [exploration]: | 减速 d=0.79
+[INFO] [1790769203.595179255] [exploration]: | 进入转向 goal=-90° 危险 d=0.13
+[INFO] [1790769203.690679059] [exploration]: | 转向中 goal=-90°
+[INFO] [1790769204.089478428] [exploration]: | 转向完成，停稳 front=0.81
+[INFO] [1790769204.190209556] [exploration]: | 直行 d=0.83
+[INFO] [1790769204.390766104] [exploration]: | 直行 d=0.82
+[INFO] [1790769204.490662662] [exploration]: | 直行 d=0.80
+[INFO] [1790769204.590215018] [exploration]: | 减速 d=0.79
+[INFO] [1790769204.693745341] [exploration]: | 进入转向 goal=-90° 危险 d=0.14
+[INFO] [1790769204.790135927] [exploration]: | 转向中 goal=-90°
+[INFO] [1790769205.091164518] [exploration]: | 转向完成，停稳 front=0.80
+[INFO] [1790769205.193880805] [exploration]: | 进入转向 goal=-90° 危险 d=0.14
+[INFO] [1790769205.291715175] [exploration]: | 转向中 goal=-90°
+[INFO] [1790769205.493213610] [exploration]: | 转向完成，停稳 front=0.97
+[INFO] [1790769205.592589560] [exploration]: | 直行 d=1.00
+[INFO] [1790769205.692350924] [exploration]: | 直行 d=0.99
+[INFO] [1790769205.793042030] [exploration]: | 直行 d=1.00
+[INFO] [1790769205.893302048] [exploration]: | 直行 d=0.99
+[INFO] [1790769205.992029384] [exploration]: | 直行 d=0.96
+[INFO] [1790769206.093139590] [exploration]: | 直行 d=0.95
+[INFO] [1790769206.193486549] [exploration]: | 直行 d=0.92
+[INFO] [1790769206.393634984] [exploration]: | 直行 d=0.89
+[INFO] [1790769206.495065400] [exploration]: | 直行 d=0.88
+[INFO] [1790769206.595970382] [exploration]: | 直行 d=0.87
+[INFO] [1790769206.695270989] [exploration]: | 直行 d=0.86
+[INFO] [1790769206.794868260] [exploration]: | 直行 d=0.83
+[INFO] [1790769206.995112610] [exploration]: | 直行 d=0.82
+[INFO] [1790769207.095279836] [exploration]: | 直行 d=0.80
+[INFO] [1790769207.196093030] [exploration]: | 减速 d=0.78
+[INFO] [1790769207.299531745] [exploration]: | 进入转向 goal=-90° 危险 d=0.14
+[INFO] [1790769207.395837076] [exploration]: | 转向中 goal=-90°
+[INFO] [1790769207.695535157] [exploration]: | 转向完成，停稳 front=0.90
+[INFO] [1790769207.799080049] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769207.899009330] [exploration]: | 持续倒退
+[INFO] [1790769207.997663989] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769208.099688826] [exploration]: | 进入转向 goal=-90° 危险 d=0.13
+[INFO] [1790769208.196256300] [exploration]: | 转向完成，停稳 front=0.98
+[INFO] [1790769208.296511646] [exploration]: | 直行 d=1.03
+[INFO] [1790769208.395872790] [exploration]: | 直行 d=1.05
+[INFO] [1790769208.496291083] [exploration]: | 直行 d=1.04
+[INFO] [1790769208.696806026] [exploration]: | 直行 d=1.05
+[INFO] [1790769208.796302353] [exploration]: | 直行 d=1.01
+[INFO] [1790769208.898446027] [exploration]: | 直行 d=1.02
+[INFO] [1790769208.997838550] [exploration]: | 直行 d=1.00
+[INFO] [1790769209.098206515] [exploration]: | 直行 d=0.97
+[INFO] [1790769209.298316532] [exploration]: | 直行 d=0.96
+[INFO] [1790769209.399323445] [exploration]: | 直行 d=0.95
+[INFO] [1790769209.499434243] [exploration]: | 直行 d=0.93
+[INFO] [1790769209.599157366] [exploration]: | 直行 d=0.90
+[INFO] [1790769209.698974676] [exploration]: | 直行 d=0.91
+[INFO] [1790769209.798874693] [exploration]: | 直行 d=0.90
+[INFO] [1790769209.899739715] [exploration]: | 直行 d=0.87
+[INFO] [1790769209.999951584] [exploration]: | 直行 d=0.88
+[INFO] [1790769210.099775203] [exploration]: | 直行 d=0.86
+[INFO] [1790769210.200480838] [exploration]: | 直行 d=0.85
+[INFO] [1790769210.300175947] [exploration]: | 直行 d=0.84
+[INFO] [1790769210.399714980] [exploration]: | 直行 d=2.55
+[INFO] [1790769210.500297414] [exploration]: | 直行 d=2.52
+[INFO] [1790769210.599892144] [exploration]: | 直行 d=2.50
+[INFO] [1790769210.802506566] [exploration]: | 直行 d=2.47
+[INFO] [1790769210.902442344] [exploration]: | 直行 d=2.45
+[INFO] [1790769211.002198996] [exploration]: | 直行 d=2.43
+[INFO] [1790769211.101716083] [exploration]: | 直行 d=2.42
+[INFO] [1790769211.202157738] [exploration]: | 直行 d=2.41
+[INFO] [1790769211.303525453] [exploration]: | 直行 d=2.39
+[INFO] [1790769211.403485930] [exploration]: | 直行 d=2.36
+[INFO] [1790769211.604452978] [exploration]: | 直行 d=2.33
+[INFO] [1790769211.703458024] [exploration]: | 直行 d=2.31
+[INFO] [1790769211.803734220] [exploration]: | 直行 d=2.30
+[INFO] [1790769211.903288973] [exploration]: | 直行 d=2.28
+[INFO] [1790769212.003479210] [exploration]: | 直行 d=2.25
+[INFO] [1790769212.104052510] [exploration]: | 直行 d=2.23
+[INFO] [1790769212.205406996] [exploration]: | 直行 d=2.21
+[INFO] [1790769212.304276003] [exploration]: | 直行 d=2.19
+[INFO] [1790769212.404259536] [exploration]: | 直行 d=2.18
+[INFO] [1790769212.506291474] [exploration]: | 直行 d=2.15
+[INFO] [1790769212.605241669] [exploration]: | 直行 d=2.13
+[INFO] [1790769212.705982448] [exploration]: | 直行 d=2.11
+[INFO] [1790769212.806420031] [exploration]: | 直行 d=2.09
+[INFO] [1790769212.906800764] [exploration]: | 直行 d=2.07
+[INFO] [1790769213.007667752] [exploration]: | 直行 d=2.05
+[INFO] [1790769213.105582064] [exploration]: | 直行 d=2.04
+[INFO] [1790769213.206625188] [exploration]: | 直行 d=2.02
+[INFO] [1790769213.306620101] [exploration]: | 直行 d=1.99
+[INFO] [1790769213.406636565] [exploration]: | 直行 d=1.97
+[INFO] [1790769213.507270044] [exploration]: | 直行 d=1.96
+[INFO] [1790769213.606906549] [exploration]: | 直行 d=1.93
+[INFO] [1790769213.707116209] [exploration]: | 直行 d=1.91
+[INFO] [1790769213.807199328] [exploration]: | 直行 d=1.89
+[INFO] [1790769213.907119388] [exploration]: | 直行 d=1.87
+[INFO] [1790769214.008073243] [exploration]: | 直行 d=1.86
+[INFO] [1790769214.107504345] [exploration]: | 直行 d=1.83
+[INFO] [1790769214.207655596] [exploration]: | 直行 d=1.81
+[INFO] [1790769214.307708128] [exploration]: | 直行 d=1.79
+[INFO] [1790769214.407681795] [exploration]: | 直行 d=1.78
+[INFO] [1790769214.508334629] [exploration]: | 直行 d=1.75
+[INFO] [1790769214.608058516] [exploration]: | 直行 d=1.74
+[INFO] [1790769214.708440178] [exploration]: | 直行 d=1.71
+[INFO] [1790769214.809010757] [exploration]: | 直行 d=1.70
+[INFO] [1790769214.909457970] [exploration]: | 直行 d=1.68
+[INFO] [1790769215.009354246] [exploration]: | 直行 d=1.66
+[INFO] [1790769215.108452524] [exploration]: | 直行 d=1.64
+[INFO] [1790769215.209125257] [exploration]: | 直行 d=1.63
+[INFO] [1790769215.309382482] [exploration]: | 直行 d=1.61
+[INFO] [1790769215.409574895] [exploration]: | 直行 d=1.59
+[INFO] [1790769215.510723692] [exploration]: | 直行 d=1.57
+[INFO] [1790769215.610011981] [exploration]: | 直行 d=1.55
+[INFO] [1790769215.709552951] [exploration]: | 直行 d=1.53
+[INFO] [1790769215.809862511] [exploration]: | 直行 d=1.51
+[INFO] [1790769215.911425417] [exploration]: | 直行 d=1.48
+[INFO] [1790769216.011017013] [exploration]: | 直行 d=1.47
+[INFO] [1790769216.110913002] [exploration]: | 直行 d=1.45
+[INFO] [1790769216.210907121] [exploration]: | 直行 d=1.43
+[INFO] [1790769216.310883665] [exploration]: | 直行 d=1.41
+[INFO] [1790769216.410251672] [exploration]: | 直行 d=1.39
+[INFO] [1790769216.510955398] [exploration]: | 直行 d=1.38
+[INFO] [1790769216.612497996] [exploration]: | 直行 d=1.35
+[INFO] [1790769216.712674024] [exploration]: | 直行 d=1.33
+[INFO] [1790769216.813502722] [exploration]: | 直行 d=1.31
+[INFO] [1790769216.913505738] [exploration]: | 直行 d=1.29
+[INFO] [1790769217.014196708] [exploration]: | 直行 d=1.27
+[INFO] [1790769217.114217388] [exploration]: | 直行 d=1.26
+[INFO] [1790769217.212738996] [exploration]: | 直行 d=1.24
+[INFO] [1790769217.312518427] [exploration]: | 直行 d=1.22
+[INFO] [1790769217.412406914] [exploration]: | 直行 d=1.20
+[INFO] [1790769217.512607777] [exploration]: | 直行 d=1.17
+[INFO] [1790769217.611909732] [exploration]: | 直行 d=1.16
+[INFO] [1790769217.712425887] [exploration]: | 直行 d=1.14
+[INFO] [1790769217.814059312] [exploration]: | 直行 d=1.13
+[INFO] [1790769217.912907035] [exploration]: | 直行 d=1.10
+[INFO] [1790769218.012522281] [exploration]: | 直行 d=1.08
+[INFO] [1790769218.113432310] [exploration]: | 直行 d=1.06
+[INFO] [1790769218.214635736] [exploration]: | 直行 d=1.04
+[INFO] [1790769218.315279996] [exploration]: | 直行 d=1.02
+[INFO] [1790769218.414064610] [exploration]: | 直行 d=1.01
+[INFO] [1790769218.514166909] [exploration]: | 直行 d=0.98
+[INFO] [1790769218.615497495] [exploration]: | 直行 d=0.96
+[INFO] [1790769218.714902460] [exploration]: | 直行 d=0.95
+[INFO] [1790769218.814296963] [exploration]: | 直行 d=0.93
+[INFO] [1790769218.915014280] [exploration]: | 直行 d=0.91
+[INFO] [1790769219.017468240] [exploration]: | 直行 d=0.89
+[INFO] [1790769219.117156592] [exploration]: | 直行 d=0.87
+[INFO] [1790769219.216285127] [exploration]: | 直行 d=0.84
+[INFO] [1790769219.317195886] [exploration]: | 直行 d=0.83
+[INFO] [1790769219.417539084] [exploration]: | 直行 d=0.81
+[INFO] [1790769219.517590136] [exploration]: | 减速 d=0.79
+[INFO] [1790769219.619586208] [exploration]: | 进入转向 goal=84° 危险 d=0.13
+[INFO] [1790769219.716963908] [exploration]: | 转向中 goal=84°
+[INFO] [1790769220.317327162] [exploration]: | 转向完成，停稳 front=0.81
+[INFO] [1790769220.417702319] [exploration]: | 直行 d=0.83
+[INFO] [1790769220.519517847] [exploration]: | 直行 d=0.82
+[INFO] [1790769220.619731272] [exploration]: | 直行 d=0.80
+[INFO] [1790769220.718104870] [exploration]: | 减速 d=0.79
+[INFO] [1790769220.924064027] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769221.023961200] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769221.121596913] [exploration]: | 进入转向 goal=-78° 危险 d=0.14
+[INFO] [1790769221.220212644] [exploration]: | 转向中 goal=-78°
+[INFO] [1790769223.623087321] [exploration]: | 转向完成，停稳 front=1.33
+[INFO] [1790769223.723479254] [exploration]: | 直行 d=1.33
+[INFO] [1790769223.923585489] [exploration]: | 直行 d=1.34
+[INFO] [1790769224.023860006] [exploration]: | 直行 d=1.32
+[INFO] [1790769224.125564061] [exploration]: | 直行 d=1.31
+[INFO] [1790769224.224823676] [exploration]: | 直行 d=1.32
+[INFO] [1790769224.324408377] [exploration]: | 直行 d=1.28
+[INFO] [1790769224.426549713] [exploration]: | 直行 d=1.30
+[INFO] [1790769224.525811352] [exploration]: | 直行 d=1.27
+[INFO] [1790769224.624825609] [exploration]: | 直行 d=1.26
+[INFO] [1790769224.725722316] [exploration]: | 直行 d=1.24
+[INFO] [1790769224.825629944] [exploration]: | 直行 d=1.23
+[INFO] [1790769224.926621334] [exploration]: | 直行 d=1.21
+[INFO] [1790769225.025289319] [exploration]: | 直行 d=1.20
+[INFO] [1790769225.125039442] [exploration]: | 直行 d=1.19
+[INFO] [1790769225.226134355] [exploration]: | 直行 d=1.16
+[INFO] [1790769225.327189209] [exploration]: | 直行 d=1.14
+[INFO] [1790769225.527915492] [exploration]: | 直行 d=1.11
+[INFO] [1790769225.628793853] [exploration]: | 直行 d=1.09
+[INFO] [1790769225.827248469] [exploration]: | 直行 d=1.06
+[INFO] [1790769226.027761323] [exploration]: | 直行 d=1.05
+[INFO] [1790769226.127797986] [exploration]: | 直行 d=1.03
+[INFO] [1790769226.228538358] [exploration]: | 直行 d=1.00
+[INFO] [1790769226.329308897] [exploration]: | 直行 d=0.98
+[INFO] [1790769226.429041856] [exploration]: | 直行 d=0.96
+[INFO] [1790769226.529763588] [exploration]: | 直行 d=0.95
+[INFO] [1790769226.629852762] [exploration]: | 直行 d=0.93
+[INFO] [1790769226.730349468] [exploration]: | 直行 d=0.92
+[INFO] [1790769226.829878452] [exploration]: | 直行 d=0.91
+[INFO] [1790769226.929854504] [exploration]: | 直行 d=0.89
+[INFO] [1790769227.029858090] [exploration]: | 直行 d=0.87
+[INFO] [1790769227.129418190] [exploration]: | 直行 d=0.85
+[INFO] [1790769227.230065345] [exploration]: | 直行 d=0.83
+[INFO] [1790769227.429956999] [exploration]: | 直行 d=0.80
+[INFO] [1790769227.531032372] [exploration]: | 减速 d=0.79
+[INFO] [1790769227.633058361] [exploration]: | 进入转向 goal=-90° 危险 d=0.14
+[INFO] [1790769227.730688205] [exploration]: | 转向中 goal=-90°
+[INFO] [1790769230.435091416] [exploration]: | 转向完成，停稳 front=0.84
+[INFO] [1790769230.537807481] [exploration]: | 进入转向 goal=-80° 危险 d=0.14
+[INFO] [1790769230.635005465] [exploration]: | 转向中 goal=-80°
+[INFO] [1790769230.736972445] [exploration]: | 转向完成，停稳 front=1.12
+[INFO] [1790769230.840507333] [exploration]: | 进入转向 goal=-68° 危险 d=0.15
+[INFO] [1790769230.936410151] [exploration]: | 转向中 goal=-68°
+[INFO] [1790769231.138221283] [exploration]: | 转向完成，停稳 front=1.44
+[INFO] [1790769231.240257535] [exploration]: | 进入转向 goal=-90° 危险 d=0.14
+[INFO] [1790769231.337066562] [exploration]: | 转向中 goal=-90°
+[INFO] [1790769231.438326029] [exploration]: | 转向完成，停稳 front=1.43
+[INFO] [1790769231.541407721] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769231.643101056] [exploration]: | 持续倒退
+[INFO] [1790769231.840068607] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769231.940346869] [exploration]: | 进入转向 goal=-84° 危险 d=0.40
+[INFO] [1790769232.037990459] [exploration]: | 转向中 goal=-84°
+[INFO] [1790769232.438972382] [exploration]: | 转向完成，停稳 front=1.45
+[INFO] [1790769232.539198128] [exploration]: | 直行 d=1.49
+[INFO] [1790769232.640089247] [exploration]: | 进入转向 goal=-84° 危险 d=0.15
+[INFO] [1790769232.739141550] [exploration]: | 转向中 goal=-84°
+[INFO] [1790769232.940766542] [exploration]: | 转向完成，停稳 front=1.50
+[INFO] [1790769233.042624007] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769233.142628835] [exploration]: | 持续倒退
+[INFO] [1790769233.244818460] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769233.345879852] [exploration]: | 进入转向 goal=-90° 危险 d=0.14
+[INFO] [1790769233.440217152] [exploration]: | 转向中 goal=-90°
+[INFO] [1790769233.840807212] [exploration]: | 转向完成，停稳 front=1.66
+[INFO] [1790769233.941036897] [exploration]: | 直行 d=1.68
+[INFO] [1790769234.042393702] [exploration]: | 直行 d=1.69
+[INFO] [1790769234.143240658] [exploration]: | 直行 d=1.68
+[INFO] [1790769234.242278715] [exploration]: | 直行 d=1.67
+[INFO] [1790769234.342435648] [exploration]: | 直行 d=1.66
+[INFO] [1790769234.442432533] [exploration]: | 直行 d=1.62
+[INFO] [1790769234.641142100] [exploration]: | 直行 d=1.60
+[INFO] [1790769234.742462244] [exploration]: | 直行 d=1.58
+[INFO] [1790769234.841622749] [exploration]: | 直行 d=1.55
+[INFO] [1790769235.042267207] [exploration]: | 直行 d=1.52
+[INFO] [1790769235.143011300] [exploration]: | 直行 d=1.51
+[INFO] [1790769235.242791405] [exploration]: | 直行 d=1.49
+[INFO] [1790769235.344239631] [exploration]: | 直行 d=1.47
+[INFO] [1790769235.443842250] [exploration]: | 直行 d=1.46
+[INFO] [1790769235.543577897] [exploration]: | 直行 d=1.44
+[INFO] [1790769235.644045287] [exploration]: | 直行 d=1.43
+[INFO] [1790769235.743015784] [exploration]: | 直行 d=1.39
+[INFO] [1790769235.943824690] [exploration]: | 直行 d=1.38
+[INFO] [1790769236.044118185] [exploration]: | 直行 d=1.35
+[INFO] [1790769236.143967076] [exploration]: | 直行 d=1.34
+[INFO] [1790769236.244476122] [exploration]: | 直行 d=1.33
+[INFO] [1790769236.345251786] [exploration]: | 直行 d=1.32
+[INFO] [1790769236.444084518] [exploration]: | 直行 d=1.29
+[INFO] [1790769236.544693446] [exploration]: | 直行 d=1.27
+[INFO] [1790769236.645993491] [exploration]: | 直行 d=1.24
+[INFO] [1790769236.745847521] [exploration]: | 直行 d=1.25
+[INFO] [1790769236.845876731] [exploration]: | 直行 d=1.23
+[INFO] [1790769236.945711581] [exploration]: | 直行 d=1.20
+[INFO] [1790769237.046804786] [exploration]: | 直行 d=1.19
+[INFO] [1790769237.146804306] [exploration]: | 直行 d=1.16
+[INFO] [1790769237.347275969] [exploration]: | 直行 d=1.15
+[INFO] [1790769237.447690851] [exploration]: | 直行 d=1.14
+[INFO] [1790769237.547565607] [exploration]: | 直行 d=1.11
+[INFO] [1790769237.646814598] [exploration]: | 直行 d=1.08
+[INFO] [1790769237.747708121] [exploration]: | 直行 d=1.06
+[INFO] [1790769237.848254931] [exploration]: | 直行 d=1.07
+[INFO] [1790769237.947953668] [exploration]: | 直行 d=1.04
+[INFO] [1790769238.047432059] [exploration]: | 直行 d=1.03
+[INFO] [1790769238.147102605] [exploration]: | 直行 d=1.01
+[INFO] [1790769238.248693453] [exploration]: | 直行 d=0.99
+[INFO] [1790769238.350664533] [exploration]: | 直行 d=0.98
+[INFO] [1790769238.448838176] [exploration]: | 直行 d=0.97
+[INFO] [1790769238.548882162] [exploration]: | 直行 d=0.94
+[INFO] [1790769238.647767967] [exploration]: | 直行 d=0.91
+[INFO] [1790769238.749315761] [exploration]: | 直行 d=0.90
+[INFO] [1790769238.847838550] [exploration]: | 直行 d=0.89
+[INFO] [1790769238.949980810] [exploration]: | 直行 d=0.88
+[INFO] [1790769239.049941161] [exploration]: | 直行 d=0.86
+[INFO] [1790769239.149548190] [exploration]: | 直行 d=0.82
+[INFO] [1790769239.349771760] [exploration]: | 直行 d=0.81
+[INFO] [1790769239.450447153] [exploration]: | 减速 d=0.79
+[INFO] [1790769239.552788883] [exploration]: | 进入转向 goal=-90° 危险 d=0.13
+[INFO] [1790769239.650692612] [exploration]: | 转向中 goal=-90°
+[INFO] [1790769240.252825017] [exploration]: | 转向完成，停稳 front=0.94
+[INFO] [1790769240.351981266] [exploration]: | 直行 d=0.97
+[INFO] [1790769240.552932771] [exploration]: | 直行 d=0.96
+[INFO] [1790769240.651534935] [exploration]: | 直行 d=0.95
+[INFO] [1790769240.753052616] [exploration]: | 直行 d=0.93
+[INFO] [1790769240.853300549] [exploration]: | 直行 d=0.92
+[INFO] [1790769240.953829267] [exploration]: | 直行 d=0.91
+[INFO] [1790769241.054576005] [exploration]: | 直行 d=0.89
+[INFO] [1790769241.153008949] [exploration]: | 直行 d=0.87
+[INFO] [1790769241.252257255] [exploration]: | 直行 d=0.86
+[INFO] [1790769241.354329646] [exploration]: | 直行 d=0.84
+[INFO] [1790769241.554215670] [exploration]: | 直行 d=0.82
+[INFO] [1790769241.654033276] [exploration]: | 直行 d=0.80
+[INFO] [1790769241.855922695] [exploration]: | 减速 d=0.78
+[INFO] [1790769241.961071903] [exploration]: | 进入转向 goal=-26° 危险 d=0.14
+[INFO] [1790769242.055454552] [exploration]: | 转向中 goal=-26°
+[INFO] [1790769242.556224391] [exploration]: | 转向完成，停稳 front=2.53
+[INFO] [1790769242.655841961] [exploration]: | 直行 d=2.53
+[INFO] [1790769242.754902403] [exploration]: | 直行 d=2.54
+[INFO] [1790769242.855588532] [exploration]: | 直行 d=2.52
+[INFO] [1790769242.955616913] [exploration]: | 直行 d=2.50
+[INFO] [1790769243.055170200] [exploration]: | 直行 d=2.49
+[INFO] [1790769243.155238335] [exploration]: | 直行 d=2.46
+[INFO] [1790769243.256565987] [exploration]: | 直行 d=2.44
+[INFO] [1790769243.357785594] [exploration]: | 直行 d=2.42
+[INFO] [1790769243.456910775] [exploration]: | 直行 d=2.41
+[INFO] [1790769243.557024319] [exploration]: | 直行 d=2.38
+[INFO] [1790769243.658037935] [exploration]: | 直行 d=2.37
+[INFO] [1790769243.757894759] [exploration]: | 直行 d=2.35
+[INFO] [1790769243.857659628] [exploration]: | 直行 d=2.32
+[INFO] [1790769243.960135926] [exploration]: | 直行 d=2.30
+[INFO] [1790769244.059326411] [exploration]: | 直行 d=2.28
+[INFO] [1790769244.158768051] [exploration]: | 直行 d=2.27
+[INFO] [1790769244.259135989] [exploration]: | 直行 d=2.25
+[INFO] [1790769244.358939312] [exploration]: | 直行 d=2.23
+[INFO] [1790769244.459562790] [exploration]: | 直行 d=2.21
+[INFO] [1790769244.559806791] [exploration]: | 直行 d=2.19
+[INFO] [1790769244.658393085] [exploration]: | 直行 d=2.18
+[INFO] [1790769244.758953325] [exploration]: | 直行 d=2.15
+[INFO] [1790769244.860041475] [exploration]: | 直行 d=2.14
+[INFO] [1790769244.960456041] [exploration]: | 直行 d=2.11
+[INFO] [1790769245.059201796] [exploration]: | 直行 d=2.09
+[INFO] [1790769245.160473273] [exploration]: | 直行 d=2.07
+[INFO] [1790769245.260414649] [exploration]: | 直行 d=2.05
+[INFO] [1790769245.360432926] [exploration]: | 直行 d=2.04
+[INFO] [1790769245.460453830] [exploration]: | 直行 d=2.02
+[INFO] [1790769245.560072966] [exploration]: | 直行 d=2.00
+[INFO] [1790769245.660329967] [exploration]: | 直行 d=1.97
+[INFO] [1790769245.760187310] [exploration]: | 直行 d=1.96
+[INFO] [1790769245.860518601] [exploration]: | 直行 d=1.95
+[INFO] [1790769245.959971564] [exploration]: | 直行 d=1.92
+[INFO] [1790769246.060089138] [exploration]: | 直行 d=1.91
+[INFO] [1790769246.160200043] [exploration]: | 直行 d=1.88
+[INFO] [1790769246.260879251] [exploration]: | 直行 d=1.85
+[INFO] [1790769246.460895609] [exploration]: | 直行 d=1.83
+[INFO] [1790769246.561060764] [exploration]: | 直行 d=1.80
+[INFO] [1790769246.660906964] [exploration]: | 直行 d=1.77
+[INFO] [1790769246.762436471] [exploration]: | 直行 d=1.76
+[INFO] [1790769246.861592295] [exploration]: | 直行 d=1.75
+[INFO] [1790769246.962082724] [exploration]: | 直行 d=1.73
+[INFO] [1790769247.062922891] [exploration]: | 直行 d=1.71
+[INFO] [1790769247.162878111] [exploration]: | 直行 d=1.68
+[INFO] [1790769247.263949226] [exploration]: | 直行 d=1.66
+[INFO] [1790769247.363502489] [exploration]: | 直行 d=1.65
+[INFO] [1790769247.464198194] [exploration]: | 直行 d=1.63
+[INFO] [1790769247.564291199] [exploration]: | 直行 d=1.61
+[INFO] [1790769247.663929604] [exploration]: | 直行 d=1.59
+[INFO] [1790769247.763996401] [exploration]: | 直行 d=1.57
+[INFO] [1790769247.864190121] [exploration]: | 直行 d=1.55
+[INFO] [1790769247.964288194] [exploration]: | 直行 d=1.53
+[INFO] [1790769248.064390326] [exploration]: | 直行 d=1.50
+[INFO] [1790769248.163964240] [exploration]: | 直行 d=1.48
+[INFO] [1790769248.264476339] [exploration]: | 直行 d=1.47
+[INFO] [1790769248.364813967] [exploration]: | 直行 d=1.46
+[INFO] [1790769248.465310707] [exploration]: | 直行 d=1.44
+[INFO] [1790769248.565765638] [exploration]: | 直行 d=1.41
+[INFO] [1790769248.664179912] [exploration]: | 直行 d=1.40
+[INFO] [1790769248.764818849] [exploration]: | 直行 d=1.37
+[INFO] [1790769248.865300978] [exploration]: | 直行 d=1.36
+[INFO] [1790769248.965611816] [exploration]: | 直行 d=1.34
+[INFO] [1790769249.066380821] [exploration]: | 直行 d=1.32
+[INFO] [1790769249.166820820] [exploration]: | 直行 d=1.30
+[INFO] [1790769249.266090745] [exploration]: | 直行 d=1.29
+[INFO] [1790769249.366548201] [exploration]: | 直行 d=1.25
+[INFO] [1790769249.466732609] [exploration]: | 直行 d=1.24
+[INFO] [1790769249.567454781] [exploration]: | 直行 d=1.22
+[INFO] [1790769249.667884267] [exploration]: | 直行 d=1.20
+[INFO] [1790769249.767010008] [exploration]: | 直行 d=1.19
+[INFO] [1790769249.866583397] [exploration]: | 直行 d=1.16
+[INFO] [1790769249.967421504] [exploration]: | 直行 d=1.14
+[INFO] [1790769250.067560580] [exploration]: | 直行 d=1.13
+[INFO] [1790769250.168166666] [exploration]: | 直行 d=1.10
+[INFO] [1790769250.268311051] [exploration]: | 直行 d=1.09
+[INFO] [1790769250.368695534] [exploration]: | 直行 d=1.06
+[INFO] [1790769250.468807062] [exploration]: | 直行 d=1.05
+[INFO] [1790769250.567887600] [exploration]: | 直行 d=1.02
+[INFO] [1790769250.667351124] [exploration]: | 直行 d=1.01
+[INFO] [1790769250.768496534] [exploration]: | 直行 d=0.99
+[INFO] [1790769250.867580361] [exploration]: | 直行 d=0.97
+[INFO] [1790769250.969678278] [exploration]: | 直行 d=0.94
+[INFO] [1790769251.068391609] [exploration]: | 直行 d=0.93
+[INFO] [1790769251.168305261] [exploration]: | 直行 d=0.92
+[INFO] [1790769251.267817143] [exploration]: | 直行 d=0.89
+[INFO] [1790769251.369098899] [exploration]: | 直行 d=0.88
+[INFO] [1790769251.469717863] [exploration]: | 直行 d=0.85
+[INFO] [1790769251.569252928] [exploration]: | 直行 d=0.84
+[INFO] [1790769251.668465121] [exploration]: | 直行 d=0.81
+[INFO] [1790769251.769598934] [exploration]: | 减速 d=0.80
+[INFO] [1790769251.874411301] [exploration]: | 进入转向 goal=88° 危险 d=0.14
+[INFO] [1790769251.968517095] [exploration]: | 转向中 goal=88°
+[INFO] [1790769252.670502366] [exploration]: | 转向完成，停稳 front=0.83
+[INFO] [1790769252.771426491] [exploration]: | 直行 d=0.85
+[INFO] [1790769252.871426940] [exploration]: | 直行 d=0.84
+[INFO] [1790769252.972159669] [exploration]: | 直行 d=0.82
+[INFO] [1790769253.072275990] [exploration]: | 直行 d=0.80
+[INFO] [1790769253.173088763] [exploration]: | 减速 d=0.79
+[INFO] [1790769253.275678643] [exploration]: | 进入转向 goal=84° 危险 d=0.40
+[INFO] [1790769253.373203920] [exploration]: | 转向中 goal=84°
+[INFO] [1790769253.773593673] [exploration]: | 转向完成，停稳 front=0.84
+[INFO] [1790769253.877773716] [exploration]: | 进入转向 goal=90° 危险 d=0.14
+[INFO] [1790769253.973503107] [exploration]: | 转向完成，停稳 front=0.87
+[INFO] [1790769254.073345936] [exploration]: | 直行 d=0.89
+[INFO] [1790769254.174432572] [exploration]: | 直行 d=0.90
+[INFO] [1790769254.275261799] [exploration]: | 直行 d=0.89
+[INFO] [1790769254.375058518] [exploration]: | 直行 d=0.87
+[INFO] [1790769254.475550298] [exploration]: | 直行 d=0.85
+[INFO] [1790769254.574898169] [exploration]: | 直行 d=0.84
+[INFO] [1790769254.674896758] [exploration]: | 直行 d=0.83
+[INFO] [1790769254.774659303] [exploration]: | 直行 d=0.81
+[INFO] [1790769254.875591849] [exploration]: | 减速 d=0.79
+[INFO] [1790769254.977497651] [exploration]: | 进入转向 goal=82° 危险 d=0.15
+[INFO] [1790769255.076823990] [exploration]: | 转向中 goal=82°
+[INFO] [1790769255.276796706] [exploration]: | 转向完成，停稳 front=0.83
+[INFO] [1790769255.377526172] [exploration]: | 进入转向 goal=6° 危险 d=0.40
+[INFO] [1790769255.475828051] [exploration]: | 转向中 goal=6°
+[INFO] [1790769255.576445948] [exploration]: | 转向完成，停稳 front=0.80
+[INFO] [1790769255.679477995] [exploration]: | 进入转向 goal=68° 危险 d=0.40
+[INFO] [1790769255.776256942] [exploration]: | 转向完成，停稳 front=0.88
+[INFO] [1790769255.876465447] [exploration]: | 直行 d=0.91
+[INFO] [1790769255.976469473] [exploration]: | 直行 d=0.92
+[INFO] [1790769256.076997004] [exploration]: | 直行 d=0.90
+[INFO] [1790769256.177047340] [exploration]: | 直行 d=0.88
+[INFO] [1790769256.277158507] [exploration]: | 直行 d=0.86
+[INFO] [1790769256.378578601] [exploration]: | 直行 d=0.85
+[INFO] [1790769256.477922529] [exploration]: | 直行 d=0.84
+[INFO] [1790769256.577712688] [exploration]: | 直行 d=0.82
+[INFO] [1790769256.677834511] [exploration]: | 直行 d=0.80
+[INFO] [1790769256.779960661] [exploration]: | 减速 d=0.78
+[INFO] [1790769256.880957160] [exploration]: | 进入转向 goal=86° 危险 d=0.13
+[INFO] [1790769256.977824494] [exploration]: | 转向中 goal=86°
+[INFO] [1790769257.078950976] [exploration]: | 转向完成，停稳 front=0.81
+[INFO] [1790769257.181999079] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769257.283274479] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769257.384814455] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769257.484749149] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769257.583387440] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769257.682435943] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769257.782316650] [exploration]: | 进入转向 goal=36° 危险 d=0.15
+[INFO] [1790769257.880550268] [exploration]: | 转向中 goal=36°
+[INFO] [1790769258.080802708] [exploration]: | 转向完成，停稳 front=1.02
+[INFO] [1790769258.181641727] [exploration]: | 直行 d=1.06
+[INFO] [1790769258.282733392] [exploration]: | 直行 d=1.07
+[INFO] [1790769258.381409615] [exploration]: | 直行 d=1.08
+[INFO] [1790769258.482584990] [exploration]: | 直行 d=1.05
+[INFO] [1790769258.681631720] [exploration]: | 直行 d=1.02
+[INFO] [1790769258.883202635] [exploration]: | 直行 d=1.00
+[INFO] [1790769258.984009725] [exploration]: | 直行 d=0.99
+[INFO] [1790769259.082784699] [exploration]: | 直行 d=0.95
+[INFO] [1790769259.182910514] [exploration]: | 直行 d=0.96
+[INFO] [1790769259.282452448] [exploration]: | 直行 d=0.95
+[INFO] [1790769259.483931400] [exploration]: | 直行 d=0.93
+[INFO] [1790769259.584510015] [exploration]: | 直行 d=0.92
+[INFO] [1790769259.783827929] [exploration]: | 直行 d=0.89
+[INFO] [1790769259.884500339] [exploration]: | 直行 d=0.88
+[INFO] [1790769260.083926342] [exploration]: | 直行 d=0.85
+[INFO] [1790769260.184427458] [exploration]: | 直行 d=0.84
+[INFO] [1790769260.283962385] [exploration]: | 直行 d=0.83
+[INFO] [1790769260.384041963] [exploration]: | 直行 d=0.81
+[INFO] [1790769260.584971272] [exploration]: | 减速 d=0.77
+[INFO] [1790769260.685461706] [exploration]: | 进入转向 goal=78° 危险 d=0.14
+[INFO] [1790769260.785944954] [exploration]: | 转向中 goal=78°
+[INFO] [1790769260.885136814] [exploration]: | 转向完成，停稳 front=0.83
+[INFO] [1790769260.986813369] [exploration]: | 直行 d=0.87
+[INFO] [1790769261.088094831] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769261.190424478] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769261.289733887] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769261.391681533] [exploration]: | 持续倒退
+[INFO] [1790769261.590861833] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769261.692317275] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769261.790684311] [exploration]: | 持续倒退
+[INFO] [1790769261.892641262] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769261.988446568] [exploration]: | 直行 d=0.89
+[INFO] [1790769262.094566735] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769262.192004620] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769262.288594822] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769262.394576018] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769262.487768362] [exploration]: | 直行 d=0.84
+[INFO] [1790769262.588124311] [exploration]: | 直行 d=0.87
+[INFO] [1790769262.689739226] [exploration]: | 直行 d=0.89
+[INFO] [1790769262.789768640] [exploration]: | 直行 d=0.87
+[INFO] [1790769262.889559655] [exploration]: | 直行 d=0.85
+[INFO] [1790769263.089550188] [exploration]: | 直行 d=0.82
+[INFO] [1790769263.190180344] [exploration]: | 直行 d=0.83
+[INFO] [1790769263.290012863] [exploration]: | 减速 d=0.80
+[INFO] [1790769263.392033273] [exploration]: | 进入转向 goal=86° 危险 d=0.16
+[INFO] [1790769263.490577758] [exploration]: | 转向中 goal=86°
+[INFO] [1790769263.691430250] [exploration]: | 转向完成，停稳 front=0.84
+[INFO] [1790769263.793904417] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769263.894598419] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769263.991639920] [exploration]: | 直行 d=1.02
+[INFO] [1790769264.095252453] [exploration]: | 进入转向 goal=12° 危险 d=0.15
+[INFO] [1790769264.191783349] [exploration]: | 转向完成，停稳 front=0.95
+[INFO] [1790769264.295274870] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769264.395952923] [exploration]: | 持续倒退
+[INFO] [1790769264.496902330] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769264.595588061] [exploration]: | 进入转向 goal=-8° 危险 d=0.15
+[INFO] [1790769264.692834459] [exploration]: | 转向完成，停稳 front=1.15
+[INFO] [1790769264.793545298] [exploration]: | 直行 d=1.18
+[INFO] [1790769264.892941719] [exploration]: | 直行 d=1.17
+[INFO] [1790769264.994004520] [exploration]: | 直行 d=1.18
+[INFO] [1790769265.093705061] [exploration]: | 直行 d=1.15
+[INFO] [1790769265.193818920] [exploration]: | 直行 d=1.13
+[INFO] [1790769265.294768727] [exploration]: | 直行 d=1.12
+[INFO] [1790769265.394772302] [exploration]: | 直行 d=1.08
+[INFO] [1790769265.594807676] [exploration]: | 直行 d=1.06
+[INFO] [1790769265.694920494] [exploration]: | 直行 d=1.04
+[INFO] [1790769265.795755421] [exploration]: | 直行 d=1.02
+[INFO] [1790769265.896371852] [exploration]: | 直行 d=1.00
+[INFO] [1790769265.995962186] [exploration]: | 直行 d=0.98
+[INFO] [1790769266.095302338] [exploration]: | 直行 d=0.96
+[INFO] [1790769266.195418115] [exploration]: | 直行 d=0.94
+[INFO] [1790769266.296474179] [exploration]: | 直行 d=0.92
+[INFO] [1790769266.396787297] [exploration]: | 直行 d=0.91
+[INFO] [1790769266.496100594] [exploration]: | 直行 d=0.88
+[INFO] [1790769266.597592786] [exploration]: | 直行 d=0.86
+[INFO] [1790769266.696050409] [exploration]: | 直行 d=0.85
+[INFO] [1790769266.797342645] [exploration]: | 直行 d=0.83
+[INFO] [1790769266.897279978] [exploration]: | 直行 d=0.81
+[INFO] [1790769266.997387069] [exploration]: | 减速 d=0.79
+[INFO] [1790769267.098179054] [exploration]: | 减速 d=0.77
+[INFO] [1790769267.197866532] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769267.300152223] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769267.401247123] [exploration]: | 进入转向 goal=72° 危险 d=0.40
+[INFO] [1790769267.497486986] [exploration]: | 转向中 goal=72°
+[INFO] [1790769268.800565744] [exploration]: | 转向完成，停稳 front=0.81
+[INFO] [1790769268.899687322] [exploration]: | 直行 d=0.82
+[INFO] [1790769269.000711684] [exploration]: | 直行 d=0.81
+[INFO] [1790769269.200441239] [exploration]: | 减速 d=0.78
+[INFO] [1790769269.303787474] [exploration]: | 进入转向 goal=90° 危险 d=0.13
+[INFO] [1790769269.402532137] [exploration]: | 转向中 goal=90°
+[INFO] [1790769269.801191506] [exploration]: | 转向完成，停稳 front=0.82
+[INFO] [1790769269.903114474] [exploration]: | 进入转向 goal=-54° 危险 d=0.14
+[INFO] [1790769270.001353337] [exploration]: | 转向中 goal=-54°
+[INFO] [1790769270.102151540] [exploration]: | 转向完成，停稳 front=0.82
+[INFO] [1790769270.202608853] [exploration]: | 减速 d=0.79
+[INFO] [1790769270.303052506] [exploration]: | 直行 d=0.80
+[INFO] [1790769270.402319212] [exploration]: | 减速 d=0.79
+[INFO] [1790769270.507125156] [exploration]: | 进入转向 goal=90° 危险 d=0.14
+[INFO] [1790769270.602714352] [exploration]: | 转向中 goal=90°
+[INFO] [1790769271.203354832] [exploration]: | 转向完成，停稳 front=0.93
+[INFO] [1790769271.303833110] [exploration]: | 直行 d=0.95
+[INFO] [1790769271.405189435] [exploration]: | 直行 d=0.94
+[INFO] [1790769271.504916295] [exploration]: | 直行 d=0.97
+[INFO] [1790769271.605234849] [exploration]: | 直行 d=0.92
+[INFO] [1790769271.706909723] [exploration]: | 直行 d=0.91
+[INFO] [1790769271.905840078] [exploration]: | 直行 d=0.87
+[INFO] [1790769272.206443207] [exploration]: | 直行 d=0.84
+[INFO] [1790769272.306217099] [exploration]: | 直行 d=0.81
+[INFO] [1790769272.505506614] [exploration]: | 减速 d=0.79
+[INFO] [1790769272.608843942] [exploration]: | 进入转向 goal=90° 危险 d=0.40
+[INFO] [1790769272.706296635] [exploration]: | 转向中 goal=90°
+[INFO] [1790769273.106291257] [exploration]: | 转向完成，停稳 front=0.93
+[INFO] [1790769273.208100113] [exploration]: | 直行 d=0.99
+[INFO] [1790769273.306202532] [exploration]: | 直行 d=1.01
+[INFO] [1790769273.507797070] [exploration]: | 直行 d=0.98
+[INFO] [1790769273.608302325] [exploration]: | 直行 d=0.97
+[INFO] [1790769273.709485170] [exploration]: | 直行 d=0.95
+[INFO] [1790769273.908944255] [exploration]: | 直行 d=0.92
+[INFO] [1790769274.109041474] [exploration]: | 直行 d=0.89
+[INFO] [1790769274.308016447] [exploration]: | 直行 d=0.88
+[INFO] [1790769274.408852485] [exploration]: | 直行 d=0.86
+[INFO] [1790769274.509533331] [exploration]: | 直行 d=0.85
+[INFO] [1790769274.609182962] [exploration]: | 直行 d=0.84
+[INFO] [1790769274.709773335] [exploration]: | 直行 d=0.81
+[INFO] [1790769274.810358557] [exploration]: | 减速 d=0.79
+[INFO] [1790769274.909221189] [exploration]: | 减速 d=0.78
+[INFO] [1790769275.009635163] [exploration]: | 减速 d=0.73
+[INFO] [1790769275.111689293] [exploration]: | 减速 d=0.78
+[INFO] [1790769275.213966803] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769275.314253074] [exploration]: | 持续倒退
+[INFO] [1790769275.414777325] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769275.511753532] [exploration]: | 减速 d=0.78
+[INFO] [1790769275.614919548] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769275.713074553] [exploration]: | 持续倒退
+[INFO] [1790769275.914760476] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769276.012410781] [exploration]: | 减速 d=0.79
+[INFO] [1790769276.115590590] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769276.212719185] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769276.316446076] [exploration]: | 进入转向 goal=12° 危险 d=0.15
+[INFO] [1790769276.412337627] [exploration]: | 转向中 goal=12°
+[INFO] [1790769276.512784782] [exploration]: | 转向完成，停稳 front=0.88
+[INFO] [1790769276.612527995] [exploration]: | 直行 d=0.94
+[INFO] [1790769276.715756440] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769276.813857105] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769276.916047612] [exploration]: | 进入转向 goal=24° 危险 d=0.40
+[INFO] [1790769277.013248595] [exploration]: | 转向中 goal=24°
+[INFO] [1790769277.114752247] [exploration]: | 转向完成，停稳 front=1.08
+[INFO] [1790769277.214126128] [exploration]: | 直行 d=1.19
+[INFO] [1790769277.313773389] [exploration]: | 直行 d=1.20
+[INFO] [1790769277.414422483] [exploration]: | 直行 d=1.19
+[INFO] [1790769277.514609566] [exploration]: | 直行 d=1.17
+[INFO] [1790769277.614481506] [exploration]: | 直行 d=1.16
+[INFO] [1790769277.716428345] [exploration]: | 直行 d=1.14
+[INFO] [1790769277.815910150] [exploration]: | 直行 d=1.15
+[INFO] [1790769277.915075243] [exploration]: | 直行 d=1.13
+[INFO] [1790769278.015201156] [exploration]: | 直行 d=1.14
+[INFO] [1790769278.115243709] [exploration]: | 直行 d=1.11
+[INFO] [1790769278.215180581] [exploration]: | 直行 d=1.12
+[INFO] [1790769278.315415927] [exploration]: | 直行 d=1.09
+[INFO] [1790769278.415690419] [exploration]: | 直行 d=1.08
+[INFO] [1790769278.515701337] [exploration]: | 直行 d=1.10
+[INFO] [1790769278.616687099] [exploration]: | 直行 d=1.08
+[INFO] [1790769278.716391819] [exploration]: | 直行 d=1.04
+[INFO] [1790769278.817129610] [exploration]: | 直行 d=1.05
+[INFO] [1790769279.018869674] [exploration]: | 直行 d=1.01
+[INFO] [1790769279.117581719] [exploration]: | 直行 d=1.02
+[INFO] [1790769279.319291314] [exploration]: | 直行 d=1.00
+[INFO] [1790769279.419146014] [exploration]: | 直行 d=0.99
+[INFO] [1790769279.620896989] [exploration]: | 直行 d=0.96
+[INFO] [1790769279.918713420] [exploration]: | 直行 d=0.94
+[INFO] [1790769280.019604024] [exploration]: | 直行 d=0.93
+[INFO] [1790769280.119160043] [exploration]: | 直行 d=0.92
+[INFO] [1790769280.319680188] [exploration]: | 直行 d=0.90
+[INFO] [1790769280.519989288] [exploration]: | 直行 d=0.88
+[INFO] [1790769280.620103177] [exploration]: | 直行 d=0.87
+[INFO] [1790769280.821525352] [exploration]: | 直行 d=0.85
+[INFO] [1790769281.021322152] [exploration]: | 直行 d=0.84
+[INFO] [1790769281.121234884] [exploration]: | 直行 d=0.83
+[INFO] [1790769281.222133346] [exploration]: | 直行 d=0.81
+[INFO] [1790769281.321799727] [exploration]: | 减速 d=0.80
+[INFO] [1790769281.425460416] [exploration]: | 进入转向 goal=78° 危险 d=0.13
+[INFO] [1790769281.521756784] [exploration]: | 转向完成，停稳 front=0.82
+[INFO] [1790769281.625304473] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769281.725693183] [exploration]: | 持续倒退
+[INFO] [1790769281.826624043] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769281.927082359] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769282.026043740] [exploration]: | 持续倒退
+[INFO] [1790769282.127264205] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769282.226184842] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769282.325633230] [exploration]: | 持续倒退
+[INFO] [1790769282.427978815] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769282.527421593] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769282.626046092] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769282.727352844] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769282.826826226] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769282.930300205] [exploration]: | 进入转向 goal=26° 危险 d=0.40
+[INFO] [1790769283.024510681] [exploration]: | 转向中 goal=26°
+[INFO] [1790769283.225800815] [exploration]: | 转向完成，停稳 front=0.97
+[INFO] [1790769283.328882110] [exploration]: | 进入转向 goal=-10° 危险 d=0.14
+[INFO] [1790769283.424933616] [exploration]: | 转向中 goal=-10°
+[INFO] [1790769284.527647122] [exploration]: | 转向完成，停稳 front=0.86
+[INFO] [1790769284.629389131] [exploration]: | 进入转向 goal=48° 危险 d=0.40
+[INFO] [1790769284.726846156] [exploration]: | 转向完成，停稳 front=0.87
+[INFO] [1790769284.830034083] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769284.927398374] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769285.033334625] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769285.127736250] [exploration]: | 持续倒退
+[INFO] [1790769285.228175911] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769285.331699993] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769285.432341201] [exploration]: | 持续倒退
+[INFO] [1790769285.531773671] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769285.634069843] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769285.734124139] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769285.834130984] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769285.935040215] [exploration]: | 持续倒退
+[INFO] [1790769286.134652532] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769286.233905586] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769286.334191490] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769286.433432597] [exploration]: | 进入转向 goal=-4° 危险 d=0.40
+[INFO] [1790769286.531457787] [exploration]: | 转向完成，停稳 front=1.38
+[INFO] [1790769286.631317711] [exploration]: | 直行 d=1.65
+[INFO] [1790769286.730379150] [exploration]: | 直行 d=1.67
+[INFO] [1790769286.831185252] [exploration]: | 直行 d=1.68
+[INFO] [1790769286.931903897] [exploration]: | 直行 d=1.67
+[INFO] [1790769287.131209641] [exploration]: | 直行 d=1.89
+[INFO] [1790769287.332324503] [exploration]: | 直行 d=1.88
+[INFO] [1790769287.433758330] [exploration]: | 直行 d=1.89
+[INFO] [1790769287.533818334] [exploration]: | 直行 d=1.90
+[INFO] [1790769287.732814444] [exploration]: | 直行 d=1.98
+[INFO] [1790769287.833076091] [exploration]: | 直行 d=1.96
+[INFO] [1790769287.933098353] [exploration]: | 直行 d=1.94
+[INFO] [1790769288.032999412] [exploration]: | 直行 d=1.92
+[INFO] [1790769288.133234622] [exploration]: | 直行 d=1.91
+[INFO] [1790769288.233124781] [exploration]: | 直行 d=1.89
+[INFO] [1790769288.333084709] [exploration]: | 直行 d=1.86
+[INFO] [1790769288.433084427] [exploration]: | 直行 d=1.85
+[INFO] [1790769288.533788821] [exploration]: | 直行 d=1.83
+[INFO] [1790769288.634119151] [exploration]: | 直行 d=1.81
+[INFO] [1790769288.733517291] [exploration]: | 直行 d=1.78
+[INFO] [1790769288.833104006] [exploration]: | 直行 d=1.77
+[INFO] [1790769288.933201974] [exploration]: | 直行 d=1.74
+[INFO] [1790769289.033671792] [exploration]: | 直行 d=1.73
+[INFO] [1790769289.133898887] [exploration]: | 直行 d=1.70
+[INFO] [1790769289.234385835] [exploration]: | 直行 d=1.69
+[INFO] [1790769289.335579551] [exploration]: | 直行 d=1.67
+[INFO] [1790769289.434608622] [exploration]: | 直行 d=1.64
+[INFO] [1790769289.534666277] [exploration]: | 直行 d=1.63
+[INFO] [1790769289.633796513] [exploration]: | 直行 d=1.60
+[INFO] [1790769289.734973300] [exploration]: | 直行 d=1.59
+[INFO] [1790769289.835441375] [exploration]: | 直行 d=1.57
+[INFO] [1790769289.934943765] [exploration]: | 直行 d=1.55
+[INFO] [1790769290.035370343] [exploration]: | 直行 d=1.53
+[INFO] [1790769290.135026813] [exploration]: | 直行 d=1.51
+[INFO] [1790769290.236307539] [exploration]: | 直行 d=1.49
+[INFO] [1790769290.336878928] [exploration]: | 直行 d=1.47
+[INFO] [1790769290.436472964] [exploration]: | 直行 d=1.45
+[INFO] [1790769290.536867473] [exploration]: | 直行 d=1.43
+[INFO] [1790769290.636513385] [exploration]: | 直行 d=1.41
+[INFO] [1790769290.737113390] [exploration]: | 直行 d=1.39
+[INFO] [1790769290.836559074] [exploration]: | 直行 d=1.37
+[INFO] [1790769290.938242975] [exploration]: | 直行 d=1.36
+[INFO] [1790769291.038027191] [exploration]: | 直行 d=1.33
+[INFO] [1790769291.137241666] [exploration]: | 直行 d=1.31
+[INFO] [1790769291.238367299] [exploration]: | 直行 d=1.29
+[INFO] [1790769291.339540789] [exploration]: | 直行 d=1.27
+[INFO] [1790769291.439520690] [exploration]: | 直行 d=1.25
+[INFO] [1790769291.540307855] [exploration]: | 直行 d=1.22
+[INFO] [1790769291.639609172] [exploration]: | 直行 d=1.21
+[INFO] [1790769291.739984414] [exploration]: | 直行 d=1.19
+[INFO] [1790769291.840008981] [exploration]: | 直行 d=1.17
+[INFO] [1790769291.940743983] [exploration]: | 直行 d=1.15
+[INFO] [1790769292.040494515] [exploration]: | 直行 d=1.13
+[INFO] [1790769292.141028751] [exploration]: | 直行 d=1.10
+[INFO] [1790769292.241703675] [exploration]: | 直行 d=1.09
+[INFO] [1790769292.341562819] [exploration]: | 直行 d=1.07
+[INFO] [1790769292.441605925] [exploration]: | 直行 d=1.06
+[INFO] [1790769292.541358759] [exploration]: | 直行 d=1.03
+[INFO] [1790769292.642011552] [exploration]: | 直行 d=1.01
+[INFO] [1790769292.740991039] [exploration]: | 直行 d=0.98
+[INFO] [1790769292.841779532] [exploration]: | 直行 d=0.97
+[INFO] [1790769292.941876705] [exploration]: | 直行 d=0.95
+[INFO] [1790769293.042452297] [exploration]: | 直行 d=0.93
+[INFO] [1790769293.142796415] [exploration]: | 直行 d=0.91
+[INFO] [1790769293.244189666] [exploration]: | 直行 d=0.89
+[INFO] [1790769293.343170047] [exploration]: | 直行 d=0.87
+[INFO] [1790769293.444104091] [exploration]: | 直行 d=0.85
+[INFO] [1790769293.542257189] [exploration]: | 直行 d=0.83
+[INFO] [1790769293.643732344] [exploration]: | 直行 d=0.81
+[INFO] [1790769293.742808181] [exploration]: | 减速 d=0.79
+[INFO] [1790769293.847538003] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769293.947111926] [exploration]: | 持续倒退
+[INFO] [1790769294.047013244] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769294.146177397] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769294.246611992] [exploration]: | 持续倒退
+[INFO] [1790769294.446595971] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769294.545397928] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790769294.643574356] [exploration]: | 持续倒退
+[INFO] [1790769294.746032227] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790769294.846246680] [exploration]: | 进入转向 goal=0° 危险 d=0.40
+[INFO] [1790769294.943705881] [exploration]: | 转向中 goal=0°
+[INFO] [1790769295.244982338] [exploration]: | 转向完成，停稳 front=0.81
+[INFO] [1790769295.344926495] [exploration]: | 直行 d=0.81
+[INFO] [1790769295.545522384] [exploration]: | 直行 d=0.80
+[INFO] [1790769295.645099451] [exploration]: | 减速 d=0.79
+[INFO] [1790769295.746624853] [exploration]: | 进入转向 goal=40° 危险 d=0.14
+[INFO] [1790769295.846046744] [exploration]: | 转向中 goal=40°
+[INFO] [1790769296.947563508] [exploration]: | 转向完成，停稳 front=0.81
+[INFO] [1790769297.047728421] [exploration]: | 直行 d=0.83
+[INFO] [1790769297.247505603] [exploration]: | 直行 d=0.80
+[INFO] [1790769297.347820263] [exploration]: | 减速 d=0.80
+[INFO] [1790769297.453651996] [exploration]: | 进入转向 goal=90° 危险 d=0.13
+[INFO] [1790769297.548146554] [exploration]: | 转向中 goal=90°
+[INFO] [1790769298.150840457] [exploration]: | 转向完成，停稳 front=0.89
+[INFO] [1790769298.252084924] [exploration]: | 直行 d=0.92
+[INFO] [1790769298.451380894] [exploration]: | 直行 d=0.93
+[INFO] [1790769298.551827133] [exploration]: | 直行 d=0.91
+[INFO] [1790769298.651735689] [exploration]: | 直行 d=0.89
+[INFO] [1790769298.751878698] [exploration]: | 直行 d=0.86
+[INFO] [1790769298.951039428] [exploration]: | 直行 d=0.85
+[INFO] [1790769299.051501768] [exploration]: | 直行 d=0.81
+[INFO] [1790769299.251620258] [exploration]: | 减速 d=0.79
+[INFO] [1790769299.354850701] [exploration]: | 进入转向 goal=0° 危险 d=0.15
+[INFO] [1790769299.450288518] [exploration]: | 转向中 goal=0°

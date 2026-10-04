@@ -1,0 +1,63 @@
+[INFO] [1790770197.181909485] [exploration]: 探索节点已启动，转向容差 10°，转向角速度 0.50 rad/s
+[INFO] [1790770197.215734271] [exploration]: | 尚未收到雷达数据
+[INFO] [1790770197.313428512] [exploration]: | 进入转向 goal=48° 危险 d=0.17
+[INFO] [1790770197.409814640] [exploration]: | 转向中 goal=48°
+[INFO] [1790770201.318829340] [exploration]: | 转向失败，倒退
+[INFO] [1790770201.418187380] [exploration]: | 持续倒退
+[INFO] [1790770202.821199123] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790770202.922782500] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790770203.019545819] [exploration]: | 持续倒退
+[INFO] [1790770204.426541242] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790770204.526191060] [exploration]: | 进入转向 goal=26° 危险 d=0.14
+[INFO] [1790770204.622822969] [exploration]: | 转向中 goal=26°
+[INFO] [1790770205.523337758] [exploration]: | 转向完成，停稳 front=1.18
+[INFO] [1790770205.623749871] [exploration]: | 直行 d=1.19
+[INFO] [1790770205.724738687] [exploration]: | 直行 d=1.18
+[INFO] [1790770205.822744892] [exploration]: | 直行 d=1.19
+[INFO] [1790770205.924160623] [exploration]: | 直行 d=1.16
+[INFO] [1790770206.024239226] [exploration]: | 直行 d=1.14
+[INFO] [1790770206.124781685] [exploration]: | 直行 d=1.13
+[INFO] [1790770206.223866627] [exploration]: | 直行 d=1.11
+[INFO] [1790770206.324942197] [exploration]: | 直行 d=1.09
+[INFO] [1790770206.424459604] [exploration]: | 直行 d=1.06
+[INFO] [1790770206.625826228] [exploration]: | 直行 d=1.03
+[INFO] [1790770206.726642214] [exploration]: | 直行 d=1.02
+[INFO] [1790770206.825817910] [exploration]: | 直行 d=1.00
+[INFO] [1790770206.926687796] [exploration]: | 直行 d=0.98
+[INFO] [1790770207.027097929] [exploration]: | 直行 d=0.95
+[INFO] [1790770207.126998276] [exploration]: | 直行 d=0.94
+[INFO] [1790770207.227715826] [exploration]: | 直行 d=0.93
+[INFO] [1790770207.327556481] [exploration]: | 直行 d=0.89
+[INFO] [1790770207.526548499] [exploration]: | 直行 d=0.87
+[INFO] [1790770207.628771551] [exploration]: | 直行 d=0.85
+[INFO] [1790770207.727738049] [exploration]: | 直行 d=0.83
+[INFO] [1790770207.827333806] [exploration]: | 直行 d=0.81
+[INFO] [1790770207.928145009] [exploration]: | 减速 d=0.79
+[INFO] [1790770208.028353223] [exploration]: | 减速 d=0.78
+[INFO] [1790770208.130394977] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790770208.227968168] [exploration]: | 持续倒退
+[INFO] [1790770209.937749198] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790770210.035254006] [exploration]: | 进入转向 goal=-44° 危险 d=0.12
+[INFO] [1790770210.131865457] [exploration]: | 转向中 goal=-44°
+[INFO] [1790770210.733505320] [exploration]: | 转向完成，停稳 front=0.99
+[INFO] [1790770210.832585831] [exploration]: | 直行 d=1.00
+[INFO] [1790770210.933869492] [exploration]: | 直行 d=1.03
+[INFO] [1790770211.033535638] [exploration]: | 直行 d=1.04
+[INFO] [1790770211.133279020] [exploration]: | 直行 d=1.02
+[INFO] [1790770211.234162202] [exploration]: | 直行 d=1.01
+[INFO] [1790770211.332490854] [exploration]: | 直行 d=0.97
+[INFO] [1790770211.433017778] [exploration]: | 直行 d=0.98
+[INFO] [1790770211.533772774] [exploration]: | 直行 d=0.96
+[INFO] [1790770211.634182718] [exploration]: | 直行 d=0.94
+[INFO] [1790770211.738271959] [exploration]: | 进入转向 goal=-26° 危险 d=0.14
+[INFO] [1790770211.835932925] [exploration]: | 转向中 goal=-26°
+[INFO] [1790770215.741278236] [exploration]: | 转向失败，倒退
+[INFO] [1790770215.841514066] [exploration]: | 持续倒退
+[INFO] [1790770217.344615324] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790770217.445531187] [exploration]: | 前方 180° 无出路，倒退
+[INFO] [1790770217.545036604] [exploration]: | 持续倒退
+[INFO] [1790770218.952029740] [exploration]: | 倒退结束，前方已有出路
+[INFO] [1790770219.050097879] [exploration]: | 进入转向 goal=-82° 危险 d=0.13
+[INFO] [1790770219.147989778] [exploration]: | 转向中 goal=-82°
+[INFO] [1790770223.052534587] [exploration]: | 转向失败，倒退
+[INFO] [1790770223.153416910] [exploration]: | 持续倒退

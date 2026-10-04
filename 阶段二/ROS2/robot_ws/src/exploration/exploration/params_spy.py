@@ -23,7 +23,7 @@ from rclpy.node import Node
 from rclpy.qos import qos_profile_sensor_data
 from sensor_msgs.msg import LaserScan
 
-OUT_FILE = 'scan_records.csv'
+OUT_FILE = 'scan_records——避障逻辑修改后.csv'
 
 
 class ScanMonitor(Node):

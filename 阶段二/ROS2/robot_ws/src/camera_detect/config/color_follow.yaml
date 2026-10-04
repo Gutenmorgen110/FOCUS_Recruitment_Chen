@@ -1,0 +1,26 @@
+# 颜色跟随节点参数
+#
+# 顶层 key 要跟 launch 里的节点名对上。
+# 阈值起点是按 world 里目标的实际尺寸几何反推的，实跑之后对着画面再调：
+#   ros2 param set /color_follow a_arrive 0.15
+color_follow:
+  ros__parameters:
+    use_sim_time: true
+
+    # 速度
+    v_follow: 0.15
+    v_slow: 0.06
+    k_yaw: 0.8
+    max_yaw: 0.8
+    cx_deadband: 0.05
+
+    # 面积分档：占比过 a_slow 减速，过 a_arrive 就停住只对中。
+    # 注意 a_arrive 对应的距离必须大于 0.55 m —— 再近画面就被目标撑满，
+    # 面积不再增长，阈值落进饱和区的话车会一直往前顶。
+    a_slow: 0.06
+    a_arrive: 0.12
+
+    # 丢目标之后的节奏
+    lost_frames: 5
+    search_yaw: 0.4
+    search_timeout: 8.0

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>waypoint_nav</name>
+  <version>0.0.0</version>
+  <description>Nav2 路点导航：AMCL 定位 + 代价地图 + 路点依次到达。</description>
+  <maintainer email="16491766+yingle_chen@user.noreply.gitee.com">chen</maintainer>
+  <license>Apache-2.0</license>
+
+  <depend>rclpy</depend>
+  <depend>geometry_msgs</depend>
+  <depend>tf_transformations</depend>
+
+  <!-- Nav2：起始工程的 package.xml 里一个都没声明，按考核要求补上 -->
+  <depend>nav2_bringup</depend>
+  <depend>nav2_map_server</depend>
+  <depend>nav2_amcl</depend>
+  <depend>nav2_bt_navigator</depend>
+  <depend>nav2_controller</depend>
+  <depend>nav2_planner</depend>
+  <depend>nav2_smoother</depend>
+  <depend>nav2_behaviors</depend>
+  <depend>nav2_costmap_2d</depend>
+  <depend>nav2_waypoint_follower</depend>
+  <depend>nav2_velocity_smoother</depend>
+  <depend>nav2_lifecycle_manager</depend>
+  <depend>nav2_simple_commander</depend>
+
+  <exec_depend>rviz2</exec_depend>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
