@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP32-S3 控制台</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px auto;
+            max-width: 560px;
+            background: #f5f5f5;
+            color: #333;
+        }
+        h1 { font-size: 22px; }
+        h2 { font-size: 17px; margin-top: 28px; border-top: 1px solid #ddd; padding-top: 16px; }
+        button {
+            padding: 12px 22px;
+            font-size: 16px;
+            margin: 5px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            background: #e0e0e0;
+            transition: 0.2s;
+        }
+        button:hover { opacity: 0.8; }
+        .on    { background: #4CAF50; color: white; }
+        .off   { background: #f44336; color: white; }
+        .apply { background: #2196F3; color: white; }
+        input[type=range] { width: 70%; height: 8px; margin: 12px; vertical-align: middle; }
+        input[type=number] { width: 90px; padding: 8px; font-size: 16px; }
+        #st {
+            background: #263238;
+            color: #aed581;
+            padding: 12px;
+            border-radius: 6px;
+            text-align: left;
+            font-size: 13px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>ESP32-S3 控制台</h1>
+
+    <h2>LED</h2>
+    <button class="on"  onclick="cmd('LED ON')">ON</button>
+    <button class="off" onclick="cmd('LED OFF')">OFF</button>
+    <button onclick="cmd('LED BLINK')">闪烁</button>
+    <button onclick="cmd('LED BREATH')">呼吸</button>
+    <br>
+    <label>亮度 <b id="lv">50</b>%</label><br>
+    <input type="range" id="ls" min="0" max="100" value="50"
+           oninput="document.getElementById('lv').innerText = this.value">
+    <button class="apply" onclick="cmd('LED ' + document.getElementById('ls').value)">应用</button>
+
+    <h2>电机</h2>
+    <button class="on"  onclick="cmd('MOTOR ON')">ON</button>
+    <button class="off" onclick="cmd('MOTOR OFF')">OFF</button>
+    <button onclick="cmd('MOTOR DIR F')">正转</button>
+    <button onclick="cmd('MOTOR DIR R')">反转</button>
+    <button onclick="cmd('MOTOR SWEEP')">自动渐变</button>
+    <br>
+    <label>开环 <b id="mv">30</b>%</label><br>
+    <input type="range" id="ms" min="0" max="100" value="30"
+           oninput="document.getElementById('mv').innerText = this.value">
+    <button class="apply" onclick="cmd('MOTOR ' + document.getElementById('ms').value)">应用</button>
+    <br><br>
+    <label>闭环目标 <input type="number" id="rpm" value="200"> RPM</label>
+    <button class="apply" onclick="cmd('MOTOR RPM ' + document.getElementById('rpm').value)">下发</button>
+
+    <h2>状态</h2>
+    <button onclick="status()">刷新</button>
+    <pre id="st">点“刷新”读一次</pre>
+
+    <script>
+        function cmd(c) {
+            fetch('/api/cmd?c=' + encodeURIComponent(c))
+                .then(r => r.text())
+                .then(t => { document.getElementById('st').innerText = c + '  ->  ' + t; })
+                .catch(e => { document.getElementById('st').innerText = c + '  ->  请求失败'; });
+        }
+        function status() {
+            fetch('/api/cmd?c=STATUS')
+                .then(r => r.text())
+                .then(t => { document.getElementById('st').innerText = t; })
+                .catch(e => { document.getElementById('st').innerText = '请求失败'; });
+        }
+    </script>
+</body>
+</html>

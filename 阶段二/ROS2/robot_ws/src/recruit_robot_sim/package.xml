@@ -21,6 +21,8 @@
   <exec_depend>rqt_image_view</exec_depend>
   <exec_depend>cv_bridge</exec_depend>
   <exec_depend>vision_opencv</exec_depend>
+  <exec_depend>exploration</exec_depend>
+  <exec_depend>camera_detect</exec_depend>
 
   <export>
     <build_type>ament_cmake</build_type>

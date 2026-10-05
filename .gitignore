@@ -1,8 +1,12 @@
 *.zip
+*.odt
 !Summary_Report*.pdf
 !**/Summary_Report*.pdf
 !**/Report.pdf
+# 电路相关（第一阶段考核材料，只留本地）
+*电路*
 陈颖乐——大二——(电路+电控)/
+待完成的报告文件.md
 # 构建产物与虚拟环境
 .venv/
 __pycache__/

@@ -117,12 +117,9 @@
 </ul></li>
 <li><a href="#task-1项目环境说明">2 TASK 1–项目环境说明</a>
 <ul>
-<li><a href="#关键安装">2.1 关键安装</a>
-<ul>
 <li><a href="#简单介绍对环境的初步认识">2.1.1 简单介绍对环境的初步认识</a></li>
 <li><a href="#跑基础的-bringup-程序">2.1.2 跑基础的 bringup 程序</a></li>
 <li><a href="#tf-树">2.1.3 TF 树</a></li>
-</ul></li>
 </ul></li>
 <li><a href="#task-2-设计机器人与仿真环境">3 TASK 2 –设计机器人与仿真环境</a>
 <ul>
@@ -155,6 +152,8 @@
 </ul></li>
 <li><a href="#task-5-实现自主导航">6 TASK 5 实现自主导航</a>
 <ul>
+<li><a href="#终端-1-场景-机器人-tf-rviz">终端 1 —— 场景 + 机器人 + TF + RViz</a></li>
+<li><a href="#终端-2-探索节点">终端 2 —— 探索节点</a></li>
 <li><a href="#最终实现效果">6.1 最终实现效果</a></li>
 <li><a href="#项目整体结构">6.2 项目整体结构</a></li>
 <li><a href="#首先查看这些接口的信息">6.3 首先查看这些接口的信息：</a>
@@ -177,7 +176,8 @@
 </ul></li>
 <li><a href="#task-6-颜色识别">7 TASK 6 颜色识别</a>
 <ul>
-<li><a href="#最终实现效果-1">7.1 最终实现效果</a></li>
+<li><a href="#终端-1">终端 1</a></li>
+<li><a href="#终端-2">终端 2</a></li>
 <li><a href="#设计思路-1">7.2 设计思路</a>
 <ul>
 <li><a href="#决策函数设计思路">7.2.1 决策函数设计思路</a></li>
@@ -206,7 +206,7 @@
 <p>注：如果无法正常看到视频，检查网络并重新打开网页</p>
 <h1 id="task-1项目环境说明">2 TASK 1–项目环境说明</h1>
 <p>项目采用 Ubuntu 22.04 配合 gazebo classic 进行开发</p>
-<h2 id="关键安装">2.1 关键安装</h2>
+<p>data/ 文件夹下记录了这个实验调参过程记录的数据，src下的exploration记录了自主探索的实现，camera_detect下记录了这个自主寻找颜色的实现 ## 2.1 关键安装</p>
 <pre><code>sudo apt update &amp;&amp; sudo apt install -y gazebo libgazebo-dev ros-humble-gazebo-ros-pkgs ros-humble-gazebo-ros 2-control</code></pre>
 <h3 id="简单介绍对环境的初步认识">2.1.1 简单介绍对环境的初步认识</h3>
 <p>查看命令</p>
@@ -274,6 +274,10 @@ ros 2 interface show 接口 查看接口信息(方便后续通过话题通信进
 <p><code>minimum_angle_penalty: 0.9 → 1.1、minimum_distance_penalty: 0.5 → 0.8</code> 首先简单理解 slam 建图原理，建图过程中会通过一个扫描匹配器估算机器人的位姿，他会给出一些列候选位姿，这上面两个参数就是来约束这个问题的。我适当放大这两个参数以实现能够更加精确的地图构建</p>
 <p><img src="attachments/img_014.webp" /> 最终结果，地图细节更加清晰了，但是地图出现了整体的倾斜，约 2 度左右，这个目前没有发现解决办法</p>
 <h1 id="task-5-实现自主导航">6 TASK 5 实现自主导航</h1>
+<h2 id="终端-1-场景-机器人-tf-rviz">终端 1 —— 场景 + 机器人 + TF + RViz</h2>
+<p><code>ros2 launch recruit_robot_sim bringup.launch.py</code></p>
+<h2 id="终端-2-探索节点">终端 2 —— 探索节点</h2>
+<p><code>ros2 launch exploration exploration.launch.py</code></p>
 <h2 id="最终实现效果">6.1 最终实现效果</h2>
 <video src="attachments/vid_003.webm" controls width="640">
 </video>
@@ -281,7 +285,7 @@ ros 2 interface show 接口 查看接口信息(方便后续通过话题通信进
 <h2 id="项目整体结构">6.2 项目整体结构</h2>
 <p><img src="attachments/img_015.webp" /></p>
 <h2 id="首先查看这些接口的信息">6.3 首先查看这些接口的信息：</h2>
-<p>首先收集基础信息，包括但不限于话题消息传递类型，/scan 数据具体内容，详情见 <code>数据分析与记录.md</code> 文件中的记录，此处只列举一部分</p>
+<p>首先收集基础信息，包括但不限于话题消息传递类型，/scan 数据具体内容，详情见 <code>data/一帧雷达数据</code> 文件中的记录，此处只列举一部分</p>
 <h3 id="查看接口">6.3.1 查看接口</h3>
 <p><img src="attachments/img_016.webp" width="511"></p>
 <h3 id="接口信息">6.3.2 接口信息</h3>
@@ -416,10 +420,10 @@ ros 2 interface show 接口 查看接口信息(方便后续通过话题通信进
 <p>我后续在倒退环节补入了一个转向分量（退的时候带一点角速度，往开阔的一侧偏），修掉了“直着退、朝向不变、再前进又对着同一个墙角”的死循环。这算是对“进小房间出不来”的一个<strong>局部缓解</strong>，不是根治——根因仍然是缺一个“记住已探索区域 / 判断房间类型”的全局机制。</p>
 <p>这个部分花了相当多时间，反复尝试思路，反复修改，进行代码决策逻辑回退 <strong>最大的收获</strong>有三个： 一是学会了通过数据采集函数，采集到我感兴趣的数据，然后根据数据进行参数的决策思路，这个思路让我避免拍脑袋决定数据的错误研究方法。 二是这个<strong>状态机的引入</strong>，不同状态下进行不同决策，显著提高了我的系统对于复杂环境的应对能力 三是从简单的局部信息，跳到了对于环形区域的选择，讲方向选择从<strong>离散变为连续</strong>，提高了最优化方向选择的能力</p>
 <h1 id="task-6-颜色识别">7 TASK 6 颜色识别</h1>
-<h2 id="最终实现效果-1">7.1 最终实现效果</h2>
-<video src="attachments/vid_006.webm" controls width="640">
-</video>
-<p>测试描述： 首先是初始化的时候，他自己随机选中了一个物块，然后，然后根据这个代码里面的一个判断，进行一个靠近达到 arrive 的一个阶段。在此之后，在我对他进行一个外界的扰动，比如说对它的方向进行一个轻微扰动，我们发现它可以很快地重新固定到这个物块上。如果对它进行一个大的扰动的话，它会按照我们设计的逻辑进行逆时针旋转的扫描，从而锁定到新的物块上去，并给出这个物块的颜色。</p>
+<h2 id="终端-1">终端 1</h2>
+<p><code>ros2 launch recruit_robot_sim bringup.launch.py</code></p>
+<h2 id="终端-2">终端 2</h2>
+<p><code>ros2 launch camera_detect color_follow.launch.py</code> ## 7.1 最终实现效果 <video src="attachments/vid_006.webm" controls width="640"></video> 测试描述： 首先是初始化的时候，他自己随机选中了一个物块，然后，然后根据这个代码里面的一个判断，进行一个靠近达到 arrive 的一个阶段。在此之后，在我对他进行一个外界的扰动，比如说对它的方向进行一个轻微扰动，我们发现它可以很快地重新固定到这个物块上。如果对它进行一个大的扰动的话，它会按照我们设计的逻辑进行逆时针旋转的扫描，从而锁定到新的物块上去，并给出这个物块的颜色。</p>
 <h2 id="设计思路-1">7.2 设计思路</h2>
 <p>首先让 AI 完成一个颜色采集 Python 脚本的设计 <code>src/camera_detect/camera_detect/image_collect.py</code> 然后采集的数据放在 <code>data/clicks.csv</code> 从而为后续参数设计提供思路</p>
 <h3 id="决策函数设计思路">7.2.1 决策函数设计思路</h3>

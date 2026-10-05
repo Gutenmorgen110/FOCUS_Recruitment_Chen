@@ -32,6 +32,7 @@ python3 serve.py        # Windows 上是 python serve.py
 # 2 TASK 1--项目环境说明
 项目采用 Ubuntu 22.04 配合 gazebo classic 进行开发
 
+data/ 文件夹下记录了这个实验调参过程记录的数据，src下的exploration记录了自主探索的实现，camera_detect下记录了这个自主寻找颜色的实现
 ## 2.1 关键安装
 
 ```
@@ -148,6 +149,11 @@ loop_match_minimum_response_coarse: 0.35 → 0.50、fine: 0.45 → 0.60
 最终结果，地图细节更加清晰了，但是地图出现了整体的倾斜，约 2 度左右，这个目前没有发现解决办法
 
 # 6 TASK 5 实现自主导航
+## 终端 1 —— 场景 + 机器人 + TF + RViz
+`ros2 launch recruit_robot_sim bringup.launch.py`
+
+## 终端 2 —— 探索节点
+`ros2 launch exploration exploration.launch.py`
 
 ## 6.1 最终实现效果
 <video src="attachments/录屏 2026年10月04日 18时18分04秒.webm" controls width="640"></video>
@@ -162,7 +168,7 @@ loop_match_minimum_response_coarse: 0.35 → 0.50、fine: 0.45 → 0.60
 ![](attachments/README-1791113250709.webp)
 
 ## 6.3 首先查看这些接口的信息：
-首先收集基础信息，包括但不限于话题消息传递类型，/scan 数据具体内容，详情见 `数据分析与记录.md` 文件中的记录，此处只列举一部分
+首先收集基础信息，包括但不限于话题消息传递类型，/scan 数据具体内容，详情见 `data/一帧雷达数据` 文件中的记录，此处只列举一部分
 
 ### 6.3.1 查看接口
 <img src="attachments/学习日志-1790600351421.webp" width="511">
@@ -334,7 +340,11 @@ loop_match_minimum_response_coarse: 0.35 → 0.50、fine: 0.45 → 0.60
 三是从简单的局部信息，跳到了对于环形区域的选择，讲方向选择从**离散变为连续**，提高了最优化方向选择的能力
 
 # 7 TASK 6 颜色识别
+## 终端 1
+  `ros2 launch recruit_robot_sim bringup.launch.py`
 
+## 终端 2
+  `ros2 launch camera_detect color_follow.launch.py`
 ## 7.1 最终实现效果
 <video src="attachments/录屏 2026年10月04日 15时53分44秒.webm" controls width="640"></video>
 测试描述：
