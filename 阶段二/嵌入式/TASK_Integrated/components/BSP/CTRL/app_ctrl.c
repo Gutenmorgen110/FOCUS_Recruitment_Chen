@@ -1,6 +1,4 @@
-/* 所有控制入口（串口 / 蓝牙 / 网页）都走这里，各模块自己持有状态，
- * 这一层只做指令分发，不另存一份。
- */
+/* 串口 / 蓝牙 / 网页的指令的集合。做一个启动综合 */
 #include <stdio.h>
 #include <string.h>
 #include "esp_err.h"
@@ -14,7 +12,9 @@
 
 static const char *TAG = "ctrl";
 
-/* 只收纯数字，避免 atoi 把 "12abc" 当成 12 */
+static bool s_inited;
+
+/* 只收纯数字 */
 static bool parse_int(const char *s, int *out)
 {
     if (s == NULL || *s == '\0') {
@@ -81,6 +81,14 @@ void app_ctrl_exec(const char *cmd, char *resp, size_t len)
     char buf[128];
 
     resp[0] = '\0';
+
+    /* 没初始化就直接拒掉 */
+    if (!s_inited) {
+        ESP_LOGE(TAG, "app_ctrl_init() 没调用，拒绝执行 [%s]", cmd);
+        snprintf(resp, len, "ERROR: not initialized");
+        return;
+    }
+
     strncpy(buf, cmd, sizeof(buf) - 1);
     buf[sizeof(buf) - 1] = '\0';
 
@@ -171,7 +179,7 @@ void app_ctrl_exec(const char *cmd, char *resp, size_t len)
         return;
     }
 
-    /* 简写，沿用串口点灯那套 */
+    /* 简写，沿用串口点灯那套指令名 */
     if (strcmp(tok, "ON") == 0) {
         led_on();
         snprintf(resp, len, "OK");
@@ -200,6 +208,10 @@ void app_ctrl_on_line(uart_port_t port, const char *line)
 {
     char resp[192];
     app_ctrl_exec(line, resp, sizeof(resp));
+
+    /* 调试用 */
+    ESP_LOGI(TAG, "uart%d 收到行 [%s] → 回 [%s]", port, line, resp[0] ? resp : "不回");
+
     if (resp[0] != '\0') {
         uart_cmd_reply(port, resp);
     }
@@ -211,8 +223,9 @@ esp_err_t app_ctrl_init(void)
     ESP_ERROR_CHECK(motor_init());
     ESP_ERROR_CHECK(motor_ctrl_start());
 
-    if (encoder_init() != ESP_OK) {
-        ESP_LOGW(TAG, "编码器未就绪，闭环不可用");
-    }
+    encoder_init();
+
+    s_inited = true;
+    ESP_LOGI(TAG, "控制层就绪，HELP 看指令");
     return ESP_OK;
 }

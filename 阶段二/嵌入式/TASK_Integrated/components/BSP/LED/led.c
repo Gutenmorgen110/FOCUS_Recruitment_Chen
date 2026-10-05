@@ -31,6 +31,7 @@ static const ledc_channel_config_t LED_CH_CFG = {
     .flags.output_invert = 0,
 };
 
+static bool s_inited;       /* 没初始化就拒绝一切操作，免得 LEDC 没配好还硬写 */
 static led_mode_t s_mode = LED_MODE_BLINK;
 static bool s_on;
 static int  s_pct = 100;
@@ -64,7 +65,10 @@ static void bind_ledc(void)
 static void apply_manual(void)
 {
     uint32_t duty = s_on ? (uint32_t)s_pct * LED_DUTY_MAX / 100 : 0;
-    ledc_set_duty_and_update(LED_LS_MODE, LED_CH, duty, 0);
+    esp_err_t err = ledc_set_duty_and_update(LED_LS_MODE, LED_CH, duty, 0);
+    if (err != ESP_OK) {
+        ESP_LOGE(TAG, "写占空比失败: %s", esp_err_to_name(err));
+    }
 }
 
 static void ensure_manual(void)
@@ -130,16 +134,21 @@ esp_err_t led_init(void)
     xTaskCreate(blink_task, "led_blink", 2560, NULL, 5, NULL);
     xTaskCreate(breath_task, "led_breath", 3072, NULL, 5, NULL);
 
-    /* 初始是 GPIO 闪烁，得把引脚从刚配好的 LEDC 上摘下来，否则 gpio_set_level 不生效 */
+    /* 初始是 GPIO 闪烁，把引脚从刚配好的 LEDC 上摘下来 */
     s_mode = LED_MODE_BLINK;
     bind_gpio();
 
+    s_inited = true;
     ESP_LOGI(TAG, "LED 就绪 GPIO%d %dHz/13bit", LED_GPIO, LED_FREQ_HZ);
     return ESP_OK;
 }
 
 esp_err_t led_set_mode(led_mode_t mode)
 {
+    if (!s_inited) {
+        ESP_LOGE(TAG, "led_init() 没调用，模式切换被忽略");
+        return ESP_ERR_INVALID_STATE;
+    }
     if (mode == s_mode) {
         return ESP_OK;
     }
@@ -175,6 +184,10 @@ led_mode_t led_get_mode(void)
 
 void led_on(void)
 {
+    if (!s_inited) {
+        ESP_LOGE(TAG, "led_init() 没调用，led_on 被忽略");
+        return;
+    }
     if (s_pct == 0) {
         s_pct = 100;        /* 之前在 0%，ON 就按全亮 */
     }
@@ -184,12 +197,20 @@ void led_on(void)
 
 void led_off(void)
 {
+    if (!s_inited) {
+        ESP_LOGE(TAG, "led_init() 没调用，led_off 被忽略");
+        return;
+    }
     s_on = false;
     ensure_manual();
 }
 
 void led_set_brightness(int percent)
 {
+    if (!s_inited) {
+        ESP_LOGE(TAG, "led_init() 没调用，设亮度被忽略");
+        return;
+    }
     if (percent < 0) percent = 0;
     if (percent > 100) percent = 100;
     s_pct = percent;

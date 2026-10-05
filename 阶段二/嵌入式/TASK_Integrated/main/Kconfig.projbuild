@@ -14,9 +14,9 @@ menu "TASK_Integrated"
 
     config BT_UART_BAUD
         int "HC-04D 波特率"
-        default 115200
+        default 9600
         help
-            HC-04D 出厂默认常是 9600。要是蓝牙发指令收不到回显，
-            先用 9600 连上、发 AT 改到 115200，再把这个值改回来。
+            HC-04D 出厂默认就是 9600，本工程直接跟它对上，不用先 AT 改。
+            要是模块已经被改成别的波特率，在这里同步即可。
 
 endmenu

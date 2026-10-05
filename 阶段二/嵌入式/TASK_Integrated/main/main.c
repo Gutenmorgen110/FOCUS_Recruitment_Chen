@@ -1,19 +1,11 @@
 #include "esp_err.h"
 #include "esp_log.h"
 #include "nvs_flash.h"
-#include "driver/gpio.h"
-#include "driver/uart.h"
 #include "app_ctrl.h"
-#include "uart_cmd.h"
 #include "wifi.h"
 #include "bt_hc04.h"
 
 static const char *TAG = "main";
-
-/* UART0 走板载桥接芯片，就是串口助手连的那个口 */
-#define CONSOLE_TX  GPIO_NUM_43
-#define CONSOLE_RX  GPIO_NUM_44
-#define CONSOLE_BAUD 115200
 
 void app_main(void)
 {
@@ -24,13 +16,14 @@ void app_main(void)
     }
     ESP_ERROR_CHECK(ret);
 
+    /* 灯/电机/编码器/PID 都在这里面初始化 */
     ESP_ERROR_CHECK(app_ctrl_init());
 
-    ESP_ERROR_CHECK(uart_cmd_init(UART_NUM_0, CONSOLE_TX, CONSOLE_RX,
-                                  CONSOLE_BAUD, app_ctrl_on_line));
-    uart_cmd_reply(UART_NUM_0, "READY  (HELP 看指令)");
+    if (bt_hc04_init() != ESP_OK) {
+        ESP_LOGE(TAG, "蓝牙初始化失败");
+    }
 
-    bt_hc04_init();
+    /* 阻塞到连上或重试用尽 */
     wifi_init_sta();
 
     ESP_LOGI(TAG, "启动完成");

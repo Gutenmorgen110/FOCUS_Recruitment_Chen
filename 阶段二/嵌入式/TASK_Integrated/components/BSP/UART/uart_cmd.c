@@ -1,6 +1,7 @@
-/* 串口命令行前端：驱动中断收数进环形缓冲，事件任务取出按行切分，不轮询不阻塞。
- * 同一份解析逻辑同时喂 UART0（控制台）和 UART1（蓝牙透传）。
+/* 串口命令行前端：中断收数进环形缓冲，事件任务按行切分，不轮询不阻塞。
+ * UART0 / UART1 共用同一套解析。
  */
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include "freertos/FreeRTOS.h"
@@ -15,6 +16,9 @@ static const char *TAG = "uart_cmd";
 
 #define UART_BUF_SIZE   1024
 #define LINE_BUF_SIZE   128
+
+// 断行策略待定：也可改成带超时的 xQueueReceive，超时即把缓冲区当一整行交出去
+// #define LINE_IDLE_MS    50
 
 typedef struct {
     QueueHandle_t queue;
@@ -58,6 +62,17 @@ static void uart_event_task(void *arg)
         int len = uart_read_bytes(port, buf,
                                   event.size < UART_BUF_SIZE ? event.size : UART_BUF_SIZE,
                                   pdMS_TO_TICKS(10));
+
+        /* 调试用：打印收到的原始字节 */
+        if (len > 0) {
+            char hex[3 * 40 + 1];
+            int k = 0;
+            for (int i = 0; i < len && i < 40 && k < (int)sizeof(hex) - 4; i++) {
+                k += snprintf(hex + k, sizeof(hex) - k, "%02X ", (unsigned char)buf[i]);
+            }
+            ESP_LOGI(TAG, "uart%d 收到 %d 字节: %s", port, len, hex);
+        }
+
         for (int i = 0; i < len; i++) {
             char c = (char)buf[i];
             if (c == '\r' || c == '\n') {

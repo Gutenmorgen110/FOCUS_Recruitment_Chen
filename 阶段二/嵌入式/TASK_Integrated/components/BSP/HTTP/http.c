@@ -1,6 +1,4 @@
-/* 网页控制：api/cmd 是通用口，把 URL 里的指令原样丢给 app_ctrl；
- * led/on、led/off、led/speed 是原来点灯那版留下来的，保持能用。
- */
+/* api/cmd 是通用口，把 URL 里的指令原样丢给 app_ctrl；led 三个接口是点灯版留下的 */
 #include <string.h>
 #include <stdlib.h>
 #include "esp_log.h"

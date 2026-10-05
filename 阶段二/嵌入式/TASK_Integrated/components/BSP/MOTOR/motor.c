@@ -1,6 +1,4 @@
-/* TB6612 驱动：AIN1/AIN2 定方向，PWMA 走 LEDC 调速。
- * STBY 必须拉高，否则整片芯片待机、电机完全不动。
- */
+/* TB6612 驱动；STBY 必须拉高 */
 #include "driver/gpio.h"
 #include "driver/ledc.h"
 #include "esp_err.h"
@@ -15,7 +13,7 @@ static const char *TAG = "motor";
 #define PIN_AIN2    GPIO_NUM_6
 #define PIN_STBY    GPIO_NUM_7
 
-/* 20kHz 在人耳听阈之上，听不到啸叫；10bit 是被 20kHz 逼出来的（20k × 2^13 > 80MHz） */
+/* 20kHz 高于人耳听阈；10bit（20k × 2^13 = 163.8MHz，超过 APB 80MHz） */
 #define MOTOR_PWM_FREQ_HZ   20000
 #define MOTOR_LEDC_TIMER    LEDC_TIMER_1
 #define MOTOR_LEDC_MODE     LEDC_LOW_SPEED_MODE
@@ -23,6 +21,7 @@ static const char *TAG = "motor";
 #define MOTOR_LEDC_RES      LEDC_TIMER_10_BIT
 #define MOTOR_DUTY_MAX      ((1 << 10) - 1)
 
+static bool s_inited;
 static bool s_forward = true;
 static float s_duty = 0.0f;
 
@@ -49,7 +48,7 @@ esp_err_t motor_init(void)
     };
     ESP_ERROR_CHECK(gpio_config(&io));
 
-    /* 先按住待机、方向清零，配好 PWM 再放行，免得接上电就猛冲 */
+    /* 先按住待机、方向清零，配好 PWM 再放行 */
     gpio_set_level(PIN_STBY, 0);
     gpio_set_level(PIN_AIN1, 0);
     gpio_set_level(PIN_AIN2, 0);
@@ -81,6 +80,7 @@ esp_err_t motor_init(void)
 
     gpio_set_level(PIN_STBY, 1);
 
+    s_inited = true;
     ESP_LOGI(TAG, "TB6612 就绪 PWMA=%d AIN1=%d AIN2=%d STBY=%d, %dHz/10bit",
              PIN_PWMA, PIN_AIN1, PIN_AIN2, PIN_STBY, MOTOR_PWM_FREQ_HZ);
     return ESP_OK;
@@ -88,6 +88,10 @@ esp_err_t motor_init(void)
 
 esp_err_t motor_set_dir(bool forward)
 {
+    if (!s_inited) {
+        ESP_LOGE(TAG, "motor_init() 没调用，设方向被忽略");
+        return ESP_ERR_INVALID_STATE;
+    }
     s_forward = forward;
     apply_dir();
     ESP_LOGI(TAG, "方向: %s", forward ? "正转" : "反转");
@@ -96,6 +100,10 @@ esp_err_t motor_set_dir(bool forward)
 
 esp_err_t motor_set_duty(float duty)
 {
+    if (!s_inited) {
+        ESP_LOGE(TAG, "motor_init() 没调用，设速度被忽略");
+        return ESP_ERR_INVALID_STATE;
+    }
     if (duty < 0.0f || duty > 1.0f) {
         ESP_LOGW(TAG, "占空比 %.2f 越界，已钳到 0~1", duty);
         duty = duty < 0.0f ? 0.0f : 1.0f;
@@ -107,6 +115,9 @@ esp_err_t motor_set_duty(float duty)
 
 esp_err_t motor_stop(void)
 {
+    if (!s_inited) {
+        return ESP_ERR_INVALID_STATE;   /* 没初始化本来就没转，不必报错 */
+    }
     s_duty = 0.0f;
     apply_duty();
     return ESP_OK;

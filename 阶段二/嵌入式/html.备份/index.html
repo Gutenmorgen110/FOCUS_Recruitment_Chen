@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <style>
+
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 900px; margin: 0 auto; padding: 2rem 1.2rem 6rem;
+    font-family: -apple-system, "Noto Sans CJK SC", "Source Han Sans SC",
+                 "Microsoft YaHei", sans-serif;
+    line-height: 1.75; font-size: 16px;
+  }
+  h1, h2, h3 { line-height: 1.3; margin-top: 2em; }
+  h1 { border-bottom: 2px solid #8884; padding-bottom: .3em; }
+  img, video { max-width: 100%; height: auto; display: block;
+               margin: 1em 0; border-radius: 6px; }
+  video { background: #000; }
+  pre { overflow-x: auto; padding: .8em; border-radius: 6px; background: #8881; }
+  code { font-family: ui-monospace, "JetBrains Mono", Consolas, monospace;
+         font-size: .9em; }
+  blockquote { border-left: 4px solid #8884; margin-left: 0; padding-left: 1em;
+               color: #888; }
+  #TOC { background: #8881; padding: 1em 1.4em; border-radius: 8px;
+         margin-bottom: 2em; }
+  #TOC ul { margin: .3em 0; padding-left: 1.2em; }
+
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">README</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#项目整体说明">1 项目整体说明</a>
+<ul>
+<li><a href="#怎么打开-html-版本">1.1 怎么打开 html 版本</a>
+<ul>
+<li><a href="#windows">Windows</a></li>
+<li><a href="#linux">Linux</a></li>
+<li><a href="#手动启动">手动启动</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#task-1项目环境说明">2 TASK 1–项目环境说明</a>
+<ul>
+<li><a href="#简单介绍对环境的初步认识">2.1.1 简单介绍对环境的初步认识</a></li>
+<li><a href="#跑基础的-bringup-程序">2.1.2 跑基础的 bringup 程序</a></li>
+<li><a href="#tf-树">2.1.3 TF 树</a></li>
+</ul></li>
+<li><a href="#task-2-设计机器人与仿真环境">3 TASK 2 –设计机器人与仿真环境</a>
+<ul>
+<li><a href="#最终修改结果">3.1 最终修改结果</a></li>
+<li><a href="#环境参数">3.2 环境参数</a></li>
+<li><a href="#设计理由与思路">3.3 设计理由与思路</a></li>
+<li><a href="#对后续的影响">3.4 对后续的影响</a></li>
+<li><a href="#设计地图过程中的一些思考">3.5 设计地图过程中的一些思考</a></li>
+</ul></li>
+<li><a href="#task-3-手动控制建图">4 TASK 3 手动控制建图</a>
+<ul>
+<li><a href="#建图过程记录">4.1 建图过程记录</a></li>
+<li><a href="#第一次建图结果">4.2 第一次建图结果</a>
+<ul>
+<li><a href="#问题分析与参数调优">4.2.1 问题分析与参数调优</a></li>
+<li><a href="#结果">4.2.2 结果</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#task-4-相关参数修改">5 TASK 4 相关参数修改</a>
+<ul>
+<li><a href="#按照-git-仓库提交流程整理">5.1 按照 git 仓库提交流程整理</a></li>
+<li><a href="#参数修改详细分析">5.2 参数修改详细分析</a>
+<ul>
+<li><a href="#地图分辨率修改">5.2.1 地图分辨率修改</a></li>
+<li><a href="#通过长连廊时会发生明显漂移">5.2.2 通过长连廊时会发生明显漂移</a></li>
+<li><a href="#那么开启回环检测后这个相似房间漂移问题">5.2.3 那么开启回环检测后这个相似房间漂移问题</a></li>
+<li><a href="#尝试修复建图偏差">5.2.4 尝试修复建图偏差</a></li>
+<li><a href="#矫正微小位姿偏差">5.2.5 矫正微小位姿偏差</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#task-5-实现自主导航">6 TASK 5 实现自主导航</a>
+<ul>
+<li><a href="#终端-1-场景-机器人-tf-rviz">终端 1 —— 场景 + 机器人 + TF + RViz</a></li>
+<li><a href="#终端-2-探索节点">终端 2 —— 探索节点</a></li>
+<li><a href="#最终实现效果">6.1 最终实现效果</a></li>
+<li><a href="#项目整体结构">6.2 项目整体结构</a></li>
+<li><a href="#首先查看这些接口的信息">6.3 首先查看这些接口的信息：</a>
+<ul>
+<li><a href="#查看接口">6.3.1 查看接口</a></li>
+<li><a href="#接口信息">6.3.2 接口信息</a></li>
+</ul></li>
+<li><a href="#获取到的信息分析">6.4 获取到的信息分析</a></li>
+<li><a href="#设计思路">6.5 设计思路</a>
+<ul>
+<li><a href="#起点三个数据-四个情境">6.5.1 起点：三个数据 + 四个情境</a></li>
+<li><a href="#一个小插曲">6.5.2 一个小插曲</a></li>
+<li><a href="#进入连廊后暴露的问题">6.5.3 进入连廊后暴露的问题</a></li>
+<li><a href="#核心难题怎么发现墙上的缺口">6.5.4 核心难题：怎么发现“墙上的缺口”</a></li>
+<li><a href="#第一次尝试跳变检测最终被放弃">6.5.5 第一次尝试：跳变检测（最终被放弃）</a></li>
+<li><a href="#转折点从局部左右到全局最优">6.5.6 转折点：从“局部左右”到“全局最优”</a></li>
+<li><a href="#卡死与倒退的重构">6.5.7 卡死与倒退的重构</a></li>
+<li><a href="#仍未解决">6.5.8 仍未解决</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#task-6-颜色识别">7 TASK 6 颜色识别</a>
+<ul>
+<li><a href="#终端-1">终端 1</a></li>
+<li><a href="#终端-2">终端 2</a></li>
+<li><a href="#设计思路-1">7.2 设计思路</a>
+<ul>
+<li><a href="#决策函数设计思路">7.2.1 决策函数设计思路</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="项目整体说明">1 项目整体说明</h1>
+<p>完成了 TASK 1 到 6，下面按照任务顺序进行说明。本说明提供 md 和 html 两个版本， 内容相同，但 <strong>md 版本无法流畅预览视频</strong>，所以推荐用 html 版本阅读。</p>
+<h2 id="怎么打开-html-版本">1.1 怎么打开 html 版本</h2>
+<p>html 版在 <code>html/</code> 目录下。<strong>不要直接双击 <code>index.html</code></strong>——浏览器对 <code>file://</code> 页面加载本地视频有安全限制，图片能正常显示、但视频会被拦掉，所以要借一个小型 本地服务打开。</p>
+<h3 id="windows">Windows</h3>
+<ol type="1">
+<li>双击 <code>html/双击我打开网页.bat</code></li>
+<li>浏览器会自动弹出，图片和视频都能正常播放，视频可以拖动进度条</li>
+<li>看完关掉那个黑色命令行窗口即可</li>
+</ol>
+<h3 id="linux">Linux</h3>
+<ol type="1">
+<li>如果双击没反应：右键 → 属性 → 权限 → 勾选「允许作为程序执行」，再双击； 或者在该目录打开终端，执行 <code>bash 双击我打开网页.sh</code></li>
+<li>看完在终端里按 <code>Ctrl-C</code> 停止服务</li>
+</ol>
+<h3 id="手动启动">手动启动</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="bu">cd</span> html</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a><span class="ex">python3</span> serve.py        # Windows 上是 python serve.py</span></code></pre></div>
+<p>注：如果无法正常看到视频，检查网络并重新打开网页</p>
+<h1 id="task-1项目环境说明">2 TASK 1–项目环境说明</h1>
+<p>项目采用 Ubuntu 22.04 配合 gazebo classic 进行开发</p>
+<p>data/ 文件夹下记录了这个实验调参过程记录的数据，src下的exploration记录了自主探索的实现，camera_detect下记录了这个自主寻找颜色的实现 ## 2.1 关键安装</p>
+<pre><code>sudo apt update &amp;&amp; sudo apt install -y gazebo libgazebo-dev ros-humble-gazebo-ros-pkgs ros-humble-gazebo-ros 2-control</code></pre>
+<h3 id="简单介绍对环境的初步认识">2.1.1 简单介绍对环境的初步认识</h3>
+<p>查看命令</p>
+<pre><code>ros 2 topic list 查看所有话题
+
+ros 2 topic info -v 具体话题查看话题具体信息
+
+ros 2 interface show 接口 查看接口信息(方便后续通过话题通信进行进一步访问与修改操作)</code></pre>
+<p><img src="attachments/img_001.webp" width="592"></p>
+<h3 id="跑基础的-bringup-程序">2.1.2 跑基础的 bringup 程序</h3>
+<video src="attachments/vid_001.webm" controls width="640">
+</video>
+<h3 id="tf-树">2.1.3 TF 树</h3>
+<p><img src="attachments/img_002.webp" /></p>
+<h1 id="task-2-设计机器人与仿真环境">3 TASK 2 –设计机器人与仿真环境</h1>
+<h2 id="最终修改结果">3.1 最终修改结果</h2>
+<p>机器人未做修改，对机器人所处环境进行了修改。 斜视图： <img src="attachments/img_003.webp" width="563"> 俯视图： <img src="attachments/img_004.webp" width="563"></p>
+<h2 id="环境参数">3.2 环境参数</h2>
+<ol type="1">
+<li>环境整体改为15.55 m × 6.61 m</li>
+<li>整个地图由两个小房间和一个连廊构成，小房间内含有三个子房间，每个小房间内都有物块</li>
+<li>连廊长 6 m ，宽 0.76 m</li>
+</ol>
+<h2 id="设计理由与思路">3.3 设计理由与思路</h2>
+<p><strong>通过对项目进行整体查看，根据后续任务要求设计环境</strong> 1. 根据 TASK 5 的要求，机器人需要在位置环境中自主移动避障，所以我设计了小房间，并扩宽了初始面积，以提供充足的未知区域。 2. 根据 TASK 6 的要求，机器人需要识别场景的红绿蓝小方块，所以我设计了总共六个小方块，三种颜色，三种形状。 3. 根据 TASK 7 的要求，机器人最好通过一段较窄区域，所以我设计了一段长连廊(不过这个设计在后续暴露出了许多问题)。 4. 单个房间的尺寸和连廊长度接近 6 m 约为激光扫描范围 3.5 m 的 1.7 倍，在这个尺寸下，很容易暴露出里程计漂移的问题，为后续调参提供了需求基础 <img src="attachments/img_005.webp" /></p>
+<h2 id="对后续的影响">3.4 对后续的影响</h2>
+<ol type="1">
+<li>对 TASK 4,建图过程的调参有了更加明显的效果，但是也暴露出了微小误差累计的问题</li>
+<li>对于 TASK 5,暴露出了许多的问题，发现通过简单的搜索方式无法完成复杂空间的建图，进行了许多排查与优化，但是自主搜索依旧存在一定的问题</li>
+</ol>
+<h2 id="设计地图过程中的一些思考">3.5 设计地图过程中的一些思考</h2>
+<ol type="1">
+<li>发现添加小物块，并且进行染色，调节尺寸有多个步骤，十分麻烦，选择直接通过地图批量构造小方块，后在 World 中进行调整，详情请见 <code>src/recruit_robot_sim/worlds/room/World</code> <img src="attachments/img_006.webp" /></li>
+</ol>
+<h1 id="task-3-手动控制建图">4 TASK 3 手动控制建图</h1>
+<h2 id="建图过程记录">4.1 建图过程记录</h2>
+<video src="attachments/vid_002.webm" controls width="640">
+</video>
+<h2 id="第一次建图结果">4.2 第一次建图结果</h2>
+<p><img src="attachments/img_007.webp" /></p>
+<h3 id="问题分析与参数调优">4.2.1 问题分析与参数调优</h3>
+<ol type="1">
+<li>首先再次重复测试，进行问题复现，并且观察问题发生前后的现象</li>
+<li>发现在第一个大房间探索时，在探索到第三个房间时，地图发生抖动，然后地图扭曲，出现如图所示结果，前两个房间地图探索均正常</li>
+<li>问题分析：进行分析，推测由于回环检测异常导致地图扭曲，验证猜想，重新回头看这个地图，发现三个小房间中的障碍物均是同样大小的圆柱体(颜色不同)，但是激光雷达无法区分颜色，错误出发了回环检测。</li>
+<li>简单思路：直接关闭回环检测，重新进行测试</li>
+</ol>
+<h3 id="结果">4.2.2 结果</h3>
+<p><img src="attachments/img_008.webp" /> 关闭回环检测后，建图完好 <strong>修正方式</strong>:重新构建一份地图，修改几何体的摆放位置，从而避免这个问题，或者通过关闭回环检测，操作，避免由于重复性的几何特征干扰检测。 <img src="attachments/img_009.webp" /> 但是这种情况下载重复通过这个连廊时会出现较大问题，所以在 TASK 4 中开启这个回环检测并进行参数修正</p>
+<h1 id="task-4-相关参数修改">5 TASK 4 相关参数修改</h1>
+<h2 id="按照-git-仓库提交流程整理">5.1 按照 git 仓库提交流程整理</h2>
+<p><img src="attachments/img_010.webp" /></p>
+<h2 id="参数修改详细分析">5.2 参数修改详细分析</h2>
+<h3 id="地图分辨率修改">5.2.1 地图分辨率修改</h3>
+<p><img src="attachments/img_011.webp" /> 关注到有些小障碍物建图不清晰，没有完成完全的闭环，这个推测可以提高地图分辨率进行解决 resolution: 0.05 → 0.03</p>
+<h3 id="通过长连廊时会发生明显漂移">5.2.2 通过长连廊时会发生明显漂移</h3>
+<p><img src="attachments/img_012.webp" /> 推测由于未开启回环检测，导致通过重复区域不能使地图对齐 do_loop_closing: false → true</p>
+<h3 id="那么开启回环检测后这个相似房间漂移问题">5.2.3 那么开启回环检测后这个相似房间漂移问题</h3>
+<p>loop_match_minimum_response_coarse: 0.35 → 0.50、fine: 0.45 → 0.60 前一个是初步匹配，后一个是精细匹配，结果，我讲达成回环检测的条件变得更加苛刻了，从而避免错误的回环检测。 修改结果 <img src="attachments/img_013.webp" /> 可以看出整体结构没啥问题，但是建图细节存在偏差</p>
+<h3 id="尝试修复建图偏差">5.2.4 尝试修复建图偏差</h3>
+<p>首先尝试定位问题，进行了多次重复试验(使用不同的移动策略)比如过一次连廊，过两次连廊，与障碍物撞击，绕着障碍物旋转等多种策略 (这个地方真的花费了很多时间才定位出问题，一直到最后也只能完成优化） (结论:对于复杂房间建图，已有的数据不充足，要是能避免或者通过其他方式减弱机器人打滑，撞击导致的位姿漂移能都完成更好的建图)</p>
+<h4 id="现象">5.2.4.1 <strong>现象</strong></h4>
+<p>发现没有碰撞或者较少碰撞的机器人建图效果更好，少通过连廊的建图效果更好。</p>
+<h3 id="矫正微小位姿偏差">5.2.5 矫正微小位姿偏差</h3>
+<p><code>minimum_angle_penalty: 0.9 → 1.1、minimum_distance_penalty: 0.5 → 0.8</code> 首先简单理解 slam 建图原理，建图过程中会通过一个扫描匹配器估算机器人的位姿，他会给出一些列候选位姿，这上面两个参数就是来约束这个问题的。我适当放大这两个参数以实现能够更加精确的地图构建</p>
+<p><img src="attachments/img_014.webp" /> 最终结果，地图细节更加清晰了，但是地图出现了整体的倾斜，约 2 度左右，这个目前没有发现解决办法</p>
+<h1 id="task-5-实现自主导航">6 TASK 5 实现自主导航</h1>
+<h2 id="终端-1-场景-机器人-tf-rviz">终端 1 —— 场景 + 机器人 + TF + RViz</h2>
+<p><code>ros2 launch recruit_robot_sim bringup.launch.py</code></p>
+<h2 id="终端-2-探索节点">终端 2 —— 探索节点</h2>
+<p><code>ros2 launch exploration exploration.launch.py</code></p>
+<h2 id="最终实现效果">6.1 最终实现效果</h2>
+<video src="attachments/vid_003.webm" controls width="640">
+</video>
+<p>接近两分钟的自主探索 1：实现了面临墙角自动回退 2：面临障碍旋转找路 3：异常(转向失败(转向超过设定时间)，卡死，前方 180 度处均无出路)进行倒退，并且向空旷处转向的操作 4：自主探索房间 接下来记录设计流程与思路</p>
+<h2 id="项目整体结构">6.2 项目整体结构</h2>
+<p><img src="attachments/img_015.webp" /></p>
+<h2 id="首先查看这些接口的信息">6.3 首先查看这些接口的信息：</h2>
+<p>首先收集基础信息，包括但不限于话题消息传递类型，/scan 数据具体内容，详情见 <code>data/一帧雷达数据</code> 文件中的记录，此处只列举一部分</p>
+<h3 id="查看接口">6.3.1 查看接口</h3>
+<p><img src="attachments/img_016.webp" width="511"></p>
+<h3 id="接口信息">6.3.2 接口信息</h3>
+<h4 id="geometry_msgsmsgtwist">6.3.2.1 geometry_msgs/msg/Twist <img src="attachments/img_017.webp" /></h4>
+<h4 id="sensor_msgsmsglaserscan">6.3.2.2 sensor_msgs/msg/LaserScan <img src="attachments/img_018.webp" /></h4>
+<h4 id="转向-90-度的位姿变化">6.3.2.3 转向 90 度的位姿变化</h4>
+<p><img src="attachments/img_019.webp" /> 初始状态位姿，向左旋转 90 度位姿 <img src="attachments/img_020.webp" /> 向右转动 90 度 <img src="attachments/img_021.webp" /></p>
+<h2 id="获取到的信息分析">6.4 获取到的信息分析</h2>
+<p>通过这一组信息，可以发现这个激光雷达记录的角度范围为 <span class="math inline">( − <em>π</em>, <em>π</em>)</span> 这个区间，并且这个距离合法采集的范围在 <span class="math inline">(0.12，3.5)</span> 这个区间内这个角度总共被切分为许多个小扇形，一份夹角为 0.01750189 rad,换算约 1°，故认为这个总共被分解为 360 个小区间进行检测。 那么正前方的这个 ranges 应该为180 的均值，正左方为 270 索引，正右方位这个 90 索引。</p>
+<h2 id="设计思路">6.5 设计思路</h2>
+<h3 id="起点三个数据-四个情境">6.5.1 起点：三个数据 + 四个情境</h3>
+<p>最初的想法是写一个 <code>count_range(起始角度, 终止角度)</code>，对一段扇区输出三个量：</p>
+<table>
+<thead>
+<tr class="header">
+<th>输出</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>有效点个数</td>
+<td>判断这段是否“有东西”</td>
+</tr>
+<tr class="even">
+<td>危险点个数</td>
+<td>判断有多少点已经进入危险距离</td>
+</tr>
+<tr class="odd">
+<td>15% 分位数距离</td>
+<td>用分位数而不是最小值，避免单个离群点把开阔判成危险</td>
+</tr>
+</tbody>
+</table>
+<p>据此划分四种情境：</p>
+<table>
+<thead>
+<tr class="header">
+<th>情境</th>
+<th>处理</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>四面空旷</td>
+<td>随机探索</td>
+</tr>
+<tr class="even">
+<td>一面有障碍</td>
+<td>转向避开</td>
+</tr>
+<tr class="odd">
+<td>两面有障碍</td>
+<td>转向避开</td>
+</tr>
+<tr class="even">
+<td>三面近距离</td>
+<td>后退</td>
+</tr>
+</tbody>
+</table>
+<p>配一个 <code>desicion_route</code> 函数输出 <code>Command(v, w)</code>，另有 <code>scan_cells</code> 做网格化统计，订阅 <code>/odom</code> 判断是否到达目标点。<strong>默认直行；遇到情况三优先左转，左侧不安全再右转。</strong></p>
+<p>这一步埋下了两个隐患：<strong>判据只有“距离”一个维度；方向选择是硬编码的左右优先。</strong></p>
+<video src="attachments/vid_004.webm" controls width="640">
+</video>
+<p><img src="attachments/img_022.webp" /> 第一次测试，参数设置有问题，导致各个方向都判定为危险。</p>
+<p><img src="attachments/img_023.webp" /> 用键盘移动机器人，配合一个 Python 脚本采集各种情况的数据，方便反推参数阈值。 采集脚本<code>src/exploration/exploration/params_spy.py</code> 采集到的数据<code>data/cell_detail.csv</code> **** 修正前： <img src="attachments/img_024.webp" /></p>
+<p>修正后重新测试： <img src="attachments/img_025.webp" /></p>
+<h3 id="一个小插曲">6.5.2 一个小插曲</h3>
+<p>后来发现有一次“不知道啥情况最后卡住”，排查下来是<strong>忘记重新构建</strong>（<code>colcon build</code>）——属于流程问题，不是算法问题。重新构建后成功进入连廊，可以较为稳定地经过狭窄连廊。</p>
+<p><img src="attachments/img_026.webp" /></p>
+<h3 id="进入连廊后暴露的问题">6.5.3 进入连廊后暴露的问题</h3>
+<video src="attachments/vid_005.webm" controls width="640">
+</video>
+<p>（含第一次卡死现象）</p>
+<h3 id="核心难题怎么发现墙上的缺口">6.5.4 核心难题：怎么发现“墙上的缺口”</h3>
+<p>进入连廊之后，最紧要的问题变成<strong>如何探索房间</strong>。原来的策略是“优先直行”，但这样很多时候会<strong>错过左右侧的开口</strong>。</p>
+<p>整理多次试验后发现的不足：</p>
+<ul>
+<li>判定安全时<strong>只依赖了“距离”这一个信息</strong></li>
+<li>决定路线时<strong>只依赖了“优先前行”这一个策略</strong></li>
+</ul>
+<p>结果就是：自主探索会忽略进入小房间的那些<strong>微小空缺</strong>。 <strong>具体描述两个问题：</strong> <strong>问题一（本质是信息不足）</strong> 有一段墙面有一个缺口，机器人沿着墙面直行，在墙面尽头遇到另一堵墙，减速。这个时候左侧是一个小房间，右侧是原本的空间。<strong>但机器人的微小倾角可能导致左侧距离远于右侧</strong>——这是一个概率性问题，也就是<strong>只通过这个时刻的数据无法判断是左行还是右行</strong>，所以策略必须能面对这种情况。</p>
+<p><strong>问题二（本质是无状态）</strong> 面对一个完整墙面时，机器人会反复摆头。猜测是由于转向操作改变了机器人状态，导致反复重复判断，最终卡死。这个地方最好留出一定的余量，方便进行运动控制。 <strong>初步的解决方向：</strong></p>
+<ul>
+<li>问题二 → 加入 margin 阈值进行管理，或者通过状态机管理：<strong>如果开始旋转，那么一定要旋转到安全距离为止，而不只是旋转到减速状态</strong></li>
+<li>问题一 → <strong>引入时间变量</strong>，看能不能检测到左右侧出现距离突变的状态。比如扫描一段扇形中相邻帧（或者相邻五帧的平均值）的值差异，作差，看是否出现了普遍性的距离增大；如果是，说明遇到了空缺，可以探索</li>
+</ul>
+<h3 id="第一次尝试跳变检测最终被放弃">6.5.5 第一次尝试：跳变检测（最终被放弃）</h3>
+<p><img src="attachments/img_027.webp" /></p>
+<p>贴着墙走记录数据，发现：前方足够靠近墙时，左右侧距离<strong>都会</strong>减小；而遇到空缺时，左侧距离会产生一个<strong>跳变，从 0.4 跳到 1.4</strong>。认为这个数据可以用来判断空缺。</p>
+<p>这个地方需要存储历史信息，且最好保留最新的一组信息，那么很容易想到引入一个<strong>队列，先进先出</strong>。</p>
+<p>经过反复思考，决定引入这个新策略：</p>
+<blockquote>
+<p><strong>当前方进入减速距离后，左右扫描，如果有一个方向出现跳变，优先走跳变方向；这个旋转一直旋转到前方到达一个安全阈值为止，这个值最好略大于减速距离。</strong></p>
+</blockquote>
+<p><strong>但出现了新的问题：</strong></p>
+<ul>
+<li>使用硬编码的方式，会出现面临小的空缺过不去</li>
+<li>又出现了在某一个角度卡死、左右反复转向的问题</li>
+<li>经常出现“转向不完全后直接向反方向旋转”的现象，所以想给系统添加一个<strong>记忆性</strong>，优先向历史方向旋转</li>
+</ul>
+<p><img src="attachments/img_028.webp" /></p>
+<p><strong>这一步的教训</strong>：跳变检测是“事件触发”式的，它只在检测到变化的那一刻做决定；而机器人需要的是“当前哪个方向最好”的持续判断。事件式方案天生对时序敏感，帧率抖动、转向中途都会让它误判。</p>
+<h3 id="转折点从局部左右到全局最优">6.5.6 转折点：从“局部左右”到“全局最优”</h3>
+<p>继续测下去，暴露的问题越来越多：</p>
+<p><img src="attachments/img_029.webp" /> （这一张是建图的时候被小房间卡死的记录） - 频繁碰撞 - 目前建图的问题在于<strong>只要进入小房间，就有较大可能被卡死，无法正常出来</strong> - 面对障碍物时本来可以避开，结果<strong>一下转过头了，又从原路径返回</strong> - <strong>回退过程中没有检测后方障碍物</strong>，导致发生撞击，后续转向受到严重影响</p>
+<p><img src="attachments/img_030.webp" /> （这一个是手动控制离开小房间后进行建图的结果） <strong>阶段性总结成三条：</strong></p>
+<ol type="1">
+<li>没有后方信息处理，无法在进入房间后进行有效回退</li>
+<li>回退时往往会过于接近障碍物导致出现卡死状态；卡死时究竟往哪个方向转向，需要一个限制与约束</li>
+<li>无法自主退出小房间，无法有目的性地向未探索区域前进</li>
+</ol>
+<p><strong>改进方向的设想：</strong></p>
+<ul>
+<li>对问题一：按目前的思路，卡死状态加入一个新的特征——一是 360 度中存在足够近的点，二是进入卡死状态后，<strong>向最空旷的方向旋转，直到达到这个方向为止</strong></li>
+<li>对问题三：目前无法解决</li>
+</ul>
+<p>所以思路是，添加一个函数 <code>scan_windows</code>：扫描前方 180 度，哪个方向有最远的空缺。进而选择出最优的方向，而倒退交给前方 180 度没有任何办法前进的情况</p>
+<p><strong>总而言之，目前思考出来的一个改进思路就是：不从局部的左右出发，而采纳整体信息，每次卡死选择最优路径进行行走，而非只是局部的信息。</strong></p>
+<blockquote>
+<p><strong>这一句话是整个设计的转折。</strong> 1. 方向决策从“左右二选一”变成“全向打分取最优” 2. 卡死判定从“局部特征”变成“全局状态” 3. 转向必须有状态（锁定目标角、转到位才停）</p>
+</blockquote>
+<h3 id="卡死与倒退的重构">6.5.7 卡死与倒退的重构</h3>
+<p>整理思路，决定<strong>只修改转向部分逻辑</strong>，对这个地方进行重构，主要是卡死机制。后面更改了设计逻辑，采用各个方向。但由于<strong>进入和退出用了不同策略</strong>，会出现“退出转向时其实还没有脱离障碍物限制”的情况，目前是通过 odom 配合倒退机制进行操作。</p>
+<p>但是这个往往无法正常退出房间。只能进行一个<strong>策略分类</strong>：通过将场景分为<strong>大房间</strong>和<strong>小房间</strong>两种状态——大房间内不存在 <code>inf</code> 或者间距极大的点，小房间中各个方向均能采集到信息，所以可以根据这个特征进行分析、判断。</p>
+<p><strong>目前暂时仍然无法解决。</strong></p>
+<h3 id="仍未解决">6.5.8 仍未解决</h3>
+<blockquote>
+<p><strong>1：无法自主退出小房间、无法有目的性地向未探索区域前进。 2：参数这个 d_clear 还需要调整，目前无法进行长连廊的探索</strong></p>
+</blockquote>
+<p>我后续在倒退环节补入了一个转向分量（退的时候带一点角速度，往开阔的一侧偏），修掉了“直着退、朝向不变、再前进又对着同一个墙角”的死循环。这算是对“进小房间出不来”的一个<strong>局部缓解</strong>，不是根治——根因仍然是缺一个“记住已探索区域 / 判断房间类型”的全局机制。</p>
+<p>这个部分花了相当多时间，反复尝试思路，反复修改，进行代码决策逻辑回退 <strong>最大的收获</strong>有三个： 一是学会了通过数据采集函数，采集到我感兴趣的数据，然后根据数据进行参数的决策思路，这个思路让我避免拍脑袋决定数据的错误研究方法。 二是这个<strong>状态机的引入</strong>，不同状态下进行不同决策，显著提高了我的系统对于复杂环境的应对能力 三是从简单的局部信息，跳到了对于环形区域的选择，讲方向选择从<strong>离散变为连续</strong>，提高了最优化方向选择的能力</p>
+<h1 id="task-6-颜色识别">7 TASK 6 颜色识别</h1>
+<h2 id="终端-1">终端 1</h2>
+<p><code>ros2 launch recruit_robot_sim bringup.launch.py</code></p>
+<h2 id="终端-2">终端 2</h2>
+<p><code>ros2 launch camera_detect color_follow.launch.py</code> ## 7.1 最终实现效果 <video src="attachments/vid_006.webm" controls width="640"></video> 测试描述： 首先是初始化的时候，他自己随机选中了一个物块，然后，然后根据这个代码里面的一个判断，进行一个靠近达到 arrive 的一个阶段。在此之后，在我对他进行一个外界的扰动，比如说对它的方向进行一个轻微扰动，我们发现它可以很快地重新固定到这个物块上。如果对它进行一个大的扰动的话，它会按照我们设计的逻辑进行逆时针旋转的扫描，从而锁定到新的物块上去，并给出这个物块的颜色。</p>
+<h2 id="设计思路-1">7.2 设计思路</h2>
+<p>首先让 AI 完成一个颜色采集 Python 脚本的设计 <code>src/camera_detect/camera_detect/image_collect.py</code> 然后采集的数据放在 <code>data/clicks.csv</code> 从而为后续参数设计提供思路</p>
+<h3 id="决策函数设计思路">7.2.1 决策函数设计思路</h3>
+<p>首先将图像进行采集,然后一句颜色设置掩码，采集轮廓，计算大小，取最大的那一个，然后进行朝向运动。</p>
+</body>
+</html>
