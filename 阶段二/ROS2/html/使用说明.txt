@@ -1,6 +1,6 @@
 怎么打开这份文档
 ====================
-
+直接点击index.html文件打开也可以(使用浏览器打开)
 【Windows】
     双击「双击我打开网页.bat」
 
@@ -15,14 +15,4 @@
 看完怎么退出
     在跳出来的那个黑色命令行窗口里按 Ctrl-C，或直接关掉它。
 
-常见问题
-    Q: 提示「没有找到 Python」
-    A: Windows 到 https://www.python.org/downloads/ 安装，务必勾选
-       "Add Python to PATH"；Linux 执行 sudo apt install python3
 
-    Q: 为什么不能直接双击 index.html
-    A: 浏览器有安全限制，直接打开本地 HTML 时图片能看、视频放不了。
-       走这个脚本会起一个本机小服务，就正常了。
-
-    Q: 附件名字为什么是 img_001 这种
-    A: 避免中文文件名在不同系统间乱码，原始名字见「附件对照表.txt」。
